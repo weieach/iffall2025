@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+body{
+    display: flex;
+    background-color: rgb(21, 21, 21);
+    color: rgb(233, 233, 233);
+    margin-bottom: 80px;
+}
+
+header{
+    position: fixed;
+    left: 20px;
+}
+
+main{
+    margin-top: 20px;
+    width: 60ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    text-align: center;
+}
+
+
+hr{
+    margin: 50px 0px;
+    opacity: 30%;
+}
+
+p{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.movie-name{
+    font-style: italic;
+}
+
+.names{
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: rgb(201, 201, 201);
+}
+
+.action-description{
+    font-weight: 500;
+    opacity: 0.6;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    font-style: italic;
+}
+
+.inline-action{
+    opacity: 0.5;
+    font-style: italic;
+}
+
+#last-action{
+    margin-top: 30px;
+}
+
+.name-section{
+    display: flex;
+    margin-top: 55px;
+    align-items: center;
+    gap: 8px;
+}
+
+.colored-avatar{
+    width: 10px;
+    height: 10px;
+    margin-bottom: 1px;
+    
+}
+
+.avatar-venkman{
+    background-color: blue;
+}
+
+.avatar-dana{
+    background-color: rgb(240, 179, 46);
+}
+
+.avatar-mayor{
+    background-color: rgb(176, 176, 176);
+}
+
+.avatar-stantz{
+    background-color: rgb(77, 193, 135);
+}
+
+
+.avatar-spengler{
+    background-color: rgb(197, 130, 148);
+}
+
+.avatar-zeddemore{
+    background-color: rgb(148, 129, 104);
+}
