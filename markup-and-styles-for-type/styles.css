@@ -58,3 +58,7 @@ a{
 code{
     color: steelblue;
 }
+
+.fa-user{
+    --fa-animation-duration: 0.5s
+}
