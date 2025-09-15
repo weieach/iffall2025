@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+}
+
+body{
+    width: 60ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section{
+    border: 3px rgb(233, 233, 233) solid;
+    margin-bottom: 30px;
+    padding: 14px 40px;
+    padding-top: 30px;
+    position: relative;
+    
+}
+
+
+
+h2{
+    font-size: 0.75rem;
+    position: absolute;
+    left: 18px;
+    top: -20px;
+    background-color: white;
+    padding: 0px 10px;
+    font-weight: 500;
+}
+
+h3{
+    font-size: 0.75rem;
+    
+}
+
+p{
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(103, 103, 103, 0.5);;
+}
+
+p:last-of-type{
+    border-bottom: none;
+    padding-bottom: 0px;
+}
+
+#title-secondary{
+    position: static;
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+
+
+.weight-extra-light{
+    font-weight: 200;
+}
+
+.weight-normal{
+    font-weight: 400;
+}
+
+.weight-bold{
+    font-weight: 700;
+}
+
+.style-normal{
+    font-style: normal;
+}
+
+.style-italic{
+    font-style: italic;
+}
+
+.tracking-none{
+    letter-spacing: normal;
+}
+
+.tracking-smaller{
+    letter-spacing: -0.02em;
+}
+
+.tracking-larger{
+    letter-spacing: 0.02em;
+}
+
+.decoration-none{
+    text-decoration: none;
+}
+
+.decoration-underline{
+    text-decoration: underline;
+}
+
+.decoration-strikethrough{
+    text-decoration: line-through;
+}
+
+.decoration-dotted{
+    text-decoration: underline dotted;
+}
+
+.transform-none{
+    text-transform: none;
+}
+
+.transform-capitalized{
+    text-transform: capitalize;
+}
+
+.transform-uppercase{
+    text-transform: uppercase;
+}
