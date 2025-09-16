@@ -1,0 +1,12 @@
+body{
+    width: 800px;
+    margin-inline: auto;
+}
+
+.img-gallery{
+    display: flex;
+}
+
+img{
+    width: 300px;
+}
