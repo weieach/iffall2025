@@ -23,13 +23,14 @@ body{
 }
 
 h1{
-    margin-top: 50px;
+    margin-top: 60px;
+    margin-bottom: 30px;
 }
 
 section{
     border: 3px rgb(67, 67, 67) solid;
     margin-bottom: 0px;
-    padding: 14px 30px;
+    padding: 10px 20px;
     padding-top: 20px;
     
     display: flex;
