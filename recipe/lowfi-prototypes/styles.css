@@ -1,0 +1,10 @@
+.desktop{
+    width: 1000px;
+}
+.mobile{
+    width: 300px;
+}
+
+#desk3{
+    display: block;
+}
