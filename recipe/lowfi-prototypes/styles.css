@@ -1,10 +1,11 @@
-.desktop{
-    width: 1000px;
-}
-.mobile{
-    width: 300px;
+body{
+    margin-inline: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: rgb(229, 229, 229);
 }
 
-#desk3{
-    display: block;
+img{
+    width: 100%;
 }
+
