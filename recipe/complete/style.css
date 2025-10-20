@@ -1,0 +1,31 @@
+* {
+
+}
+
+main{
+    color: #414202;
+}
+
+h1, h2{
+    font-family: Norman;
+}
+
+h1{
+    font-size: 44px;
+    font-weight: 700;
+
+
+}
+
+h2{
+    color: #E9EC23;
+
+}
+
+#opening-comment{
+
+}
+
+.ph-star{
+    color: #E9EC23;
+}
