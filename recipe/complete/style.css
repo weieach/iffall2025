@@ -1,10 +1,21 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  --bg-color: #f3f4eb;
+  --secondary-color: #FF931E;
+}
+::selection {
+  background-color: #eaec24;
+}
+
+html{
+background-color: var(--bg-color);
 }
 
 main {
   color: #414202;
+  
+  z-index: -2;
 }
 
 h1,
@@ -16,23 +27,31 @@ h2 {
 }
 
 h1 {
-   grid-column: 2 / span 1;
+  margin-top: 75px;
+    grid-column: 2 / span 1;
 }
 
 h2 {
-  color: #e9ec23;
+  color: #323300;
+  font-size: 34px;
+}
+
+h3 {
+  color: #323303;
+  font-family: Raleway;
+  font-size: 16px;
 }
 
 
-#how-to-make-h2{
-    grid-column: 2 / span 1;
-    display: none;
+
+#how-to-make-h2 {
+  grid-column: 2 / span 1;
+  display: none;
 }
- 
 
 #intro-section {
-    grid-column: 2 / span 1;
-
+  grid-column: 2 / span 1;
+  
 }
 
 p {
@@ -41,38 +60,82 @@ p {
   color: #333307;
 }
 
-
-.intro-spacing{
-    padding: 0px 30px;
-    display: grid;
-    grid-template-columns: 34px 1fr 34px;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
+nav{
+    display: flex;
+    padding: 16px 36px 10px 36px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: var(--bg-color);
+    width: 100vw;
+    border-bottom: 1px solid #32330020; 
+    z-index: 10;
 }
 
+.material-symbols-outlined{
+    color: #414201;
+}
+
+#nav-tabs{
+    
+    display: none;
+}
+
+.intro-spacing {
+  padding: 0px 30px;
+  display: grid;
+  grid-template-columns: 34px 1fr 34px;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  
+}
+
+.intro-spacing-2{
+    background-color: var(--bg-color);
+    grid-column: 2;
+}
+
+.btn{
+  display: block;
+  font-family: "Asterisk Sans Variable";
+  color: #2f2f03;
+  text-decoration: none;
+}
 
 .btn-nav {
   padding: 16px 10px;
-  display: block;
+
   width: 100%;
   background: #e9ec23;
-  font-family: "Asterisk Sans Variable";
-  text-decoration: none;
+
   font-size: 20px;
   font-weight: 800;
-  color: #2f2f03;
-  border: 1px solid rgba(112, 111, 18, 0.50);
-    border-radius: 20px;
-    text-align: center;
+  
+  border: 1px solid rgba(112, 111, 18, 0.5);
+  border-radius: 20px;
+  text-align: center;
+}
 
+.btn-secondary{
+    width: auto;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-size: 1rem;
+    border: 1px solid rgba(65, 66, 2, 0.50);
+    background-color: var(--secondary-color);
 
 }
 
-
-
 .icon {
   color: #706f12;
+}
+
+.served-pie-img{
+    width: 370px;
+    position: fixed;
+    top: 185px;
+    z-index: -1;
 }
 
 #opening-comment-line {
@@ -87,7 +150,6 @@ p {
   font-family: "Warbler Display";
   font-size: 18px;
   font-style: italic;
-  
 }
 
 .ph-star {
@@ -95,38 +157,37 @@ p {
 }
 
 .pie-orange-bg {
+visibility: none;
   width: 100vw;
   height: 271px;
-  background-color: #ff931e;
+  background-color: #ff931e; 
+  background-color: -webkit-linear-gradient(0deg, #ff931e 0%, #24254e 100%);
+  z-index: -10;
   grid-column: 1 / span 3;
 }
 
 
 
-.overview-brief{
-    padding: 0px 16px;
-    grid-column: 2 / span 1;
+.overview-brief {
+  padding: 0px 16px;
+  grid-column: 2;
+  background-color: var(--bg-color);
 }
 
-
-
-
-#dish-description{
-    padding: 20px 0px;
-    border-bottom: 1px solid #EE891D;
+#dish-description {
+  padding: 20px 0px;
+  border-bottom: 1px solid var(--secondary-color);
 }
 
-
-
-#overview-heading{
-    display: none;
+#overview-heading {
+  display: none;
 }
 
-.overview-entries{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 14px;
-    padding: 20px 0px;
+.overview-entries {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 14px;
+  padding: 20px 0px;
 }
 
 .overview-entry {
@@ -143,18 +204,200 @@ p {
   font-weight: 700;
 }
 
-#btn-get-ingredients{
-    grid-column: 2;
+#btn-get-ingredients {
+  grid-column: 2;
 }
 
-#nutrition-facts-section{
-    grid-column: 2;
+#nutrition-facts-section {
+  grid-column: 2;
+  display: grid;
+  padding: 10px 20px;
+}
+
+#nutrition-facts-section h3 {
+  padding-top: 30px;
+  padding-bottom: 6px;
+}
+
+.nutrition-facts-entry {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0px;
+}
+
+.nutrition-facts-entry:not(:last-child) {
+  border-bottom: 1px solid #ee891d;
+}
+
+#section-ingredients-tools{
+    background-color: #323300;
+    padding: 20px 50px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#section-title-ingredients{
+    color: #e9ec23;
+}
+
+#section-ingredients-tools h3{
+    color: #EEEDF7; 
+    margin-bottom: 14px;
+}
+
+
+
+#section-ingredients-tools > p {
+    color: #EEEDF7;
+}
+
+.ingredient-entry{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    border-bottom: 1px solid #242501;
+}
+
+.name-w-tag{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.quantity-w-note{
+    display: flex;
+    gap: 4px;
+}
+
+.ingredient-thumbnail{
+    width: 60px;
+}
+
+.ingredient-name,
+.ingredient-quantity, 
+.ingredient-note{
+    color: #EEEDF7;
+    font-size: 14px;
+
+}
+
+.ingredient-name{
+    font-weight: 700;
+}
+
+.ingredient-quantity{
+
+}
+
+.ingredient-note{
+    opacity: 0.7;
+}
+
+.tag-optional{
+    padding: 4px 10px;
+    font-family: Raleway;
+    color: #C6C5C6;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 200px;
+
+    background-color: #262600;
+}
+
+#ingredient-alt-note{
+    color: #EEEDF7;
+    margin-top: 20px;
+}
+
+#ingredient-alt-note a{
+    color: #EEEDF7;
+    font-weight: 600;
 }
 
 .equipment-thumbnails {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 14px;
+
+}
+
+.equipment-thumbnails p{
+  color: #EEEDF7;
+  font-size: 14px;
 }
 
 .equipment-thumbnail {
   width: 100px;
+}
+
+#section-instructions{
+    min-height: calc(100vh - 66px);
+    padding: 30px 50px 50px 50px;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+#section-title-instructions{
+
+}
+
+.dropdown-line{
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.dropdown-line p{
+    font-size: 0.9rem;
+
+}
+
+.cooking-copy{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+    
+}
+
+.cooking-copy h3{
+    font-size: 1.5rem;
+    
+}
+
+select{
+    background-color: #F3F4EB;
+    padding: 6px 14px;
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #414202;
+
+}
+
+
+.cooking-thumbnail{
+    width: 90%;
+}
+
+.icon-sequence{
+    width: 100%;
+}
+
+.cooking-pg-bottom{
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.mobile-interaction-note{
+    text-align: center;
+}
+
+.desktop-interaction-note{
+    display: none;
 }
