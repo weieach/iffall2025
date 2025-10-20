@@ -1,31 +1,160 @@
 * {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+main {
+  color: #414202;
+}
+
+h1,
+h2 {
+  font-family: Norman;
+  font-size: 44px;
+  font-weight: 700;
+  color: #414202;
+}
+
+h1 {
+   grid-column: 2 / span 1;
+}
+
+h2 {
+  color: #e9ec23;
+}
+
+
+#how-to-make-h2{
+    grid-column: 2 / span 1;
+    display: none;
+}
+ 
+
+#intro-section {
+    grid-column: 2 / span 1;
 
 }
 
-main{
-    color: #414202;
+p {
+  font-family: Raleway;
+  font-size: 14px;
+  color: #333307;
 }
 
-h1, h2{
-    font-family: Norman;
+
+.intro-spacing{
+    padding: 0px 30px;
+    display: grid;
+    grid-template-columns: 34px 1fr 34px;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
 }
 
-h1{
-    font-size: 44px;
-    font-weight: 700;
+
+.btn-nav {
+  padding: 16px 10px;
+  display: block;
+  width: 100%;
+  background: #e9ec23;
+  font-family: "Asterisk Sans Variable";
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 800;
+  color: #2f2f03;
+  border: 1px solid rgba(112, 111, 18, 0.50);
+    border-radius: 20px;
+    text-align: center;
 
 
 }
 
-h2{
-    color: #E9EC23;
 
+
+.icon {
+  color: #706f12;
 }
 
-#opening-comment{
-
+#opening-comment-line {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
 }
 
-.ph-star{
-    color: #E9EC23;
+#opening-comment {
+  color: #323303;
+  font-family: "Warbler Display";
+  font-size: 18px;
+  font-style: italic;
+  
+}
+
+.ph-star {
+  color: #e9ec23;
+}
+
+.pie-orange-bg {
+  width: 100vw;
+  height: 271px;
+  background-color: #ff931e;
+  grid-column: 1 / span 3;
+}
+
+
+
+.overview-brief{
+    padding: 0px 16px;
+    grid-column: 2 / span 1;
+}
+
+
+
+
+#dish-description{
+    padding: 20px 0px;
+    border-bottom: 1px solid #EE891D;
+}
+
+
+
+#overview-heading{
+    display: none;
+}
+
+.overview-entries{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 14px;
+    padding: 20px 0px;
+}
+
+.overview-entry {
+  display: flex;
+  gap: 4px;
+}
+
+.overview-entry div {
+  display: flex;
+  gap: 10px;
+}
+
+.number-quantity {
+  font-weight: 700;
+}
+
+#btn-get-ingredients{
+    grid-column: 2;
+}
+
+#nutrition-facts-section{
+    grid-column: 2;
+}
+
+.equipment-thumbnails {
+  display: grid;
+}
+
+.equipment-thumbnail {
+  width: 100px;
 }
