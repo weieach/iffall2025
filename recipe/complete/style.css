@@ -5,7 +5,8 @@
   --secondary-color: #FF931E;
 }
 ::selection {
-  background-color: #eaec24;
+  background-color: #EAEC24;
+  opacity: 0.8;
 }
 
 html{
@@ -278,10 +279,17 @@ visibility: none;
     flex-direction: column;
     gap: 30px;
     scroll-margin-top: 60px;
+    align-items: center;
+    width: auto;
 }
+
+
 
 #section-title-ingredients{
     color: #e9ec23;
+    text-align: left;
+    align-self: flex-start;
+
 }
 
 #section-ingredients-tools h3{
@@ -293,6 +301,10 @@ visibility: none;
 
 #section-ingredients-tools > p {
     color: #EEEDF7;
+}
+
+#section-ingredients{
+    margin-bottom: 34px;
 }
 
 .ingredient-entry{
@@ -358,10 +370,21 @@ visibility: none;
     font-weight: 600;
 }
 
+#section-equipment{
+    
+}
+
+.equipment-big-div{
+    max-width: 450px;
+}
+
+
 .equipment-thumbnails {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 14px;
+  grid-template-columns: repeat(3, 1fr);
+  
+  gap: 14px;
+  margin-bottom: 30px;
 
 }
 
@@ -371,7 +394,8 @@ visibility: none;
 }
 
 .equipment-thumbnail {
-  width: 100px;
+  width: 100%;
+  max-width: 140px;
 }
 
 #section-instructions{
@@ -384,9 +408,6 @@ visibility: none;
     scroll-margin-top: 60px;
 }
 
-#section-title-instructions{
-
-}
 
 .dropdown-line{
     display: flex;

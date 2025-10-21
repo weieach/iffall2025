@@ -10,6 +10,10 @@
 }
 
 @media (min-width: 900px) {
+  main{
+    width: 100vw;
+  }
+
   h1 {
     font-size: clamp(3rem, 11vw, 200px);
     margin-top: 60px;
@@ -18,21 +22,23 @@
     margin-bottom: clamp(-20px, -4%, -40px);
   }
 
-  
+  section h2 {
+    font-size: 6.2rem;
+  }
 
   nav {
     top: 0;
   }
 
-  .hide-in-mobile{
+  .hide-in-mobile {
     display: block;
   }
 
-  .hide-in-desktop{
+  .hide-in-desktop {
     display: none;
   }
 
-  #how-to-make-h2{
+  #how-to-make-h2 {
     display: none;
   }
 
@@ -62,10 +68,9 @@
     padding: 0px 40px;
     display: block;
     width: 100%;
-
   }
 
-  .intro-spacing-2{
+  .intro-spacing-2 {
     /* three-column info */
     display: flex;
     flex-direction: row;
@@ -73,16 +78,15 @@
     padding: 28px 0px 30px 0px;
     padding-left: clamp(100px, 10%, 150px);
   }
-  
-  #intro-section{
+
+  #intro-section {
     display: none;
   }
 
-  .served-pie-img{
-    width: clamp(370px, 50vw ,694px);
+  .served-pie-img {
+    width: clamp(370px, 50vw, 694px);
     top: clamp(185px, 20vw, 280px);
     z-index: -5;
-    
   }
 
   .pie-orange-bg {
@@ -92,44 +96,39 @@
     border: 1px solid #414202;
   }
 
-  #dish-description-mobile{
+  #dish-description-mobile {
     display: none;
   }
 
-  #dish-description{
+  #dish-description {
     display: none;
   }
 
-
-  .overview-brief{
+  .overview-brief {
     padding: 0;
     order: 2;
     width: clamp(200px, 20%, 300px);
   }
-  
 
-  #overview-heading{
+  #overview-heading {
     display: block;
     font-size: 1.25rem;
   }
 
-  .overview-entries{
+  .overview-entries {
     grid-column-start: 1;
     display: flex;
     flex-direction: column;
   }
 
-
-  .overview-entry{
+  .overview-entry {
     padding: 20px 0px;
     justify-content: space-between;
   }
 
-  .overview-entry:not(:last-child){
-    border-bottom: 1px solid #EE891D;
-    
+  .overview-entry:not(:last-child) {
+    border-bottom: 1px solid #ee891d;
   }
-
 
   #nutrition-facts-section {
     padding: 0;
@@ -137,53 +136,135 @@
     gap: 0;
   }
 
-  #nutrition-facts-section h3{
+  #nutrition-facts-section h3 {
     padding: 0;
     font-size: 1.25rem;
   }
 
-  #nutrition-facts-section p{
-    
+  #nutrition-facts-section p {
   }
 
-  .nutrition-facts-entry{
+  .nutrition-facts-entry {
     padding: 20px 0px;
     height: fit-content;
   }
 
-  #btn-get-ingredients{
+  #btn-get-ingredients {
     order: 10;
     padding: 32px 0px;
-    
+
     border-radius: 50px;
     text-align: center;
   }
 
-  .desciption-and-btn-desk{
-    order:10;
+  .desciption-and-btn-desk {
+    order: 10;
     width: clamp(200px, 30%, 540px);
   }
 
-  .desciption-and-btn-desk p{
+  .desciption-and-btn-desk p {
     border: none;
   }
 
-  .desciption-and-btn-desk .icon{
-
+  .desciption-and-btn-desk .icon {
   }
 
-  .opening-comment-line{
+  .opening-comment-line {
     flex-direction: column;
     align-items: start;
     margin: 0;
   }
 
-  .opening-comment{
+  .opening-comment {
     font-family: "Warbler Display";
 
     font-size: 1.75rem;
   }
 
+  /* section 2 */
+  #section-ingredients-tools{
+    width: 100vw;
+    height: calc(100vh - 68.5px);
+    align-items: start;
+  }
   
-}
 
+  .section-i-t-flexbox {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: clamp(20px, 4%, 60px);
+  }
+  #section-ingredients {
+    min-width: 500px;
+    width: 40%;
+    /* padding-left: clamp(50px, 7%, 150px); */
+    position: relative;
+  }
+
+  .section-i-t-flexbox h3 {
+    font-size: 1.375rem;
+    margin-bottom: 24px;
+  }
+
+  .ingredient-entry {
+    position: relative;
+  }
+
+  .ingredient-thumbnail {
+    width: 70px;
+  }
+
+  .ingredient-entry p {
+    font-size: 1rem;
+  }
+
+  .ingredient-quantity {
+    font-size: 1rem;
+    font-weight: 700;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+  }
+
+  /* section 2: equipments */
+  #section-equipment, #btn-start-cooking {
+    max-width: 450px;
+    width: 100%;
+  }
+
+  .equipment-big-div {
+    
+    grid-column-start: 2;
+  }
+
+  .equipment-thumbnails {
+    gap: clamp(8px, 3%, 14px);
+    margin-bottom: 34px;
+  }
+
+  .equipment-thumbnail {
+    max-width: 140px;
+    width: 100%;
+  }
+
+  #btn-start-cooking{
+    
+  }
+
+  #ingredient-alt-note{
+    position: absolute;
+    
+    top: 0px;
+    right: 0px;
+    margin: 4px;
+  }
+  #ingredient-alt-note a{
+    color: #EAEC24;
+  }
+
+
+  .step{
+    display: flex;
+    min-height: 451px;
+  }
+}
