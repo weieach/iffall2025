@@ -1,3 +1,5 @@
+@import "media-query.css";
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,6 +12,7 @@
 
 html{
 background-color: var(--bg-color);
+scroll-behavior: smooth;
 }
 
 main {
@@ -21,7 +24,7 @@ main {
 h1,
 h2 {
   font-family: Norman;
-  font-size: 44px;
+  font-size: 2.75rem;
   font-weight: 700;
   color: #414202;
 }
@@ -29,17 +32,20 @@ h2 {
 h1 {
   margin-top: 75px;
     grid-column: 2 / span 1;
+    position: sticky;
+    top: 70px;
+    z-index: -1;
 }
 
 h2 {
   color: #323300;
-  font-size: 34px;
+  font-size: 2.125rem;
 }
 
 h3 {
   color: #323303;
   font-family: Raleway;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 
@@ -51,12 +57,14 @@ h3 {
 
 #intro-section {
   grid-column: 2 / span 1;
-  
+  position: sticky;
+  top: 144px;
+  z-index: -1;
 }
 
 p {
   font-family: Raleway;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #333307;
 }
 
@@ -88,7 +96,6 @@ nav{
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  
 }
 
 .intro-spacing-2{
@@ -109,7 +116,7 @@ nav{
   width: 100%;
   background: #e9ec23;
 
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 800;
   
   border: 1px solid rgba(112, 111, 18, 0.5);
@@ -122,10 +129,12 @@ nav{
     border-radius: 20px;
     padding: 10px 30px;
     font-size: 1rem;
-    border: 1px solid rgba(65, 66, 2, 0.50);
+    border: 1px solid rgba(65, 66, 2, 0.30);
     background-color: var(--secondary-color);
 
 }
+
+
 
 .icon {
   color: #706f12;
@@ -135,6 +144,8 @@ nav{
     width: 370px;
     position: fixed;
     top: 185px;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: -1;
 }
 
@@ -148,7 +159,7 @@ nav{
 #opening-comment {
   color: #323303;
   font-family: "Warbler Display";
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: italic;
 }
 
@@ -166,7 +177,18 @@ visibility: none;
   grid-column: 1 / span 3;
 }
 
+.white-space-1,
+.white-space-2{
+    background-color: var(--bg-color);
+}
 
+.white-space-1{
+    grid-column-start: 1;
+}
+
+.white-space-2{
+    grid-column-start: 3;
+}
 
 .overview-brief {
   padding: 0px 16px;
@@ -236,6 +258,7 @@ visibility: none;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    scroll-margin-top: 60px;
 }
 
 #section-title-ingredients{
@@ -279,7 +302,7 @@ visibility: none;
 .ingredient-quantity, 
 .ingredient-note{
     color: #EEEDF7;
-    font-size: 14px;
+    font-size: 0.875rem;
 
 }
 
@@ -299,7 +322,7 @@ visibility: none;
     padding: 4px 10px;
     font-family: Raleway;
     color: #C6C5C6;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 700;
     border-radius: 200px;
 
@@ -325,7 +348,7 @@ visibility: none;
 
 .equipment-thumbnails p{
   color: #EEEDF7;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .equipment-thumbnail {
@@ -339,6 +362,7 @@ visibility: none;
     display: flex;
     flex-direction: column;
     gap: 34px;
+    scroll-margin-top: 60px;
 }
 
 #section-title-instructions{
@@ -365,7 +389,7 @@ visibility: none;
 }
 
 .cooking-copy h3{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     
 }
 
@@ -381,7 +405,10 @@ select{
 
 
 .cooking-thumbnail{
-    width: 90%;
+    width: 80%;
+    max-width: 300px;
+    align-self: center;
+    border-bottom: 8px solid #414201;
 }
 
 .icon-sequence{
@@ -401,3 +428,4 @@ select{
 .desktop-interaction-note{
     display: none;
 }
+

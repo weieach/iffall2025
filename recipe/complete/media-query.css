@@ -1,0 +1,14 @@
+@media (max-width: 430px) {
+  html {
+    font-size: 12px;
+  }
+
+  .intro-spacing {
+    padding: 0px 30px;
+    display: grid;
+    grid-template-columns: 1fr 360px 1fr;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+}
