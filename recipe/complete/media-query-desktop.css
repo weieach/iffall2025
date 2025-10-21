@@ -1,0 +1,189 @@
+@media (min-width: 600px) {
+  .intro-spacing {
+    padding: 0px 30px;
+    display: grid;
+    grid-template-columns: 1fr 500px 1fr;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media (min-width: 900px) {
+  h1 {
+    font-size: clamp(3rem, 11vw, 200px);
+    margin-top: 60px;
+    grid-column: 1 / -1;
+    position: static;
+    margin-bottom: clamp(-20px, -4%, -40px);
+  }
+
+  
+
+  nav {
+    top: 0;
+  }
+
+  .hide-in-mobile{
+    display: block;
+  }
+
+  .hide-in-desktop{
+    display: none;
+  }
+
+  #how-to-make-h2{
+    display: none;
+  }
+
+  #logo {
+    display: flex;
+    gap: 8px;
+  }
+
+  #nav-tabs {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  #nav-tabs li {
+    display: block;
+    font-family: Raleway;
+    list-style: none;
+    font-weight: 600;
+  }
+
+  #hamburger-menu {
+    display: none;
+  }
+
+  .intro-spacing {
+    padding: 0px 40px;
+    display: block;
+    width: 100%;
+
+  }
+
+  .intro-spacing-2{
+    /* three-column info */
+    display: flex;
+    flex-direction: row;
+    gap: clamp(30px, 5%, 76px);
+    padding: 28px 0px 30px 0px;
+    padding-left: clamp(100px, 10%, 150px);
+  }
+  
+  #intro-section{
+    display: none;
+  }
+
+  .served-pie-img{
+    width: clamp(370px, 50vw ,694px);
+    top: clamp(185px, 20vw, 280px);
+    z-index: -5;
+    
+  }
+
+  .pie-orange-bg {
+    width: 100%;
+    position: relative;
+    z-index: -10;
+    border: 1px solid #414202;
+  }
+
+  #dish-description-mobile{
+    display: none;
+  }
+
+  #dish-description{
+    display: none;
+  }
+
+
+  .overview-brief{
+    padding: 0;
+    order: 2;
+    width: clamp(200px, 20%, 300px);
+  }
+  
+
+  #overview-heading{
+    display: block;
+    font-size: 1.25rem;
+  }
+
+  .overview-entries{
+    grid-column-start: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .overview-entry{
+    padding: 20px 0px;
+    justify-content: space-between;
+  }
+
+  .overview-entry:not(:last-child){
+    border-bottom: 1px solid #EE891D;
+    
+  }
+
+
+  #nutrition-facts-section {
+    padding: 0;
+    width: clamp(180px, 16%, 260px);
+    gap: 0;
+  }
+
+  #nutrition-facts-section h3{
+    padding: 0;
+    font-size: 1.25rem;
+  }
+
+  #nutrition-facts-section p{
+    
+  }
+
+  .nutrition-facts-entry{
+    padding: 20px 0px;
+    height: fit-content;
+  }
+
+  #btn-get-ingredients{
+    order: 10;
+    padding: 32px 0px;
+    
+    border-radius: 50px;
+    text-align: center;
+  }
+
+  .desciption-and-btn-desk{
+    order:10;
+    width: clamp(200px, 30%, 540px);
+  }
+
+  .desciption-and-btn-desk p{
+    border: none;
+  }
+
+  .desciption-and-btn-desk .icon{
+
+  }
+
+  .opening-comment-line{
+    flex-direction: column;
+    align-items: start;
+    margin: 0;
+  }
+
+  .opening-comment{
+    font-family: "Warbler Display";
+
+    font-size: 1.75rem;
+  }
+
+  
+}
+

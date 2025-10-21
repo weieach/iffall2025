@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css" >
     <link rel="stylesheet" href="https://use.typekit.net/ovr7hpa.css" >
     <link rel="script" href="script.js" >
-    <link rel="stylesheet" href="media-query.css" >
+    <link rel="stylesheet" href="media-query-desktop.css" >
+    <link rel="stylesheet" href="media-query-mobile.css" >
 
     <link
       rel="stylesheet"
@@ -28,13 +29,13 @@
           <span class="material-symbols-outlined">menu</span>
         </div>
 
-        <div id="logo">
+        <div id="logo" class="hide-in-mobile">
           <i class="icon ph-fill ph-fork-knife"></i>
           <p>Key Lime Icebox Pie</p>
         </div>
 
-        <ul id="nav-tabs">
-          <li><a href="#start" class="btn">Overview</a></li>
+        <ul id="nav-tabs" class="hide-in-mobile">
+          <li><a href="#first-screen" class="btn">Overview</a></li>
           <li>
             <a href="#section-ingredients-tools" class="btn">Ingredients</a>
           </li>
@@ -47,17 +48,17 @@
       </nav>
     </header>
     <main>
-      <div id="start"></div>
+      <div id="first-screen"></div>
       <div class="intro-spacing">
-        <h2 id="how-to-make-h2">How to make:</h2>
+        <h2 id="how-to-make-h2" class="hide-in-mobile">How to make:</h2>
         <h1>Key Lime Icebox Pie</h1>
         <img
           src="assets/cooking-instruction-thumbnails/pie-cutout-noised.png"
           class="served-pie-img"
           alt="keylime-pie" >
         <section id="intro-section">
-          <div id="opening-comment-line">
-            <p id="opening-comment">“So easy, and so yummy”</p>
+          <div class="opening-comment-line">
+            <p class="opening-comment">“So easy, and so yummy”</p>
             <div class="stars">
               <i class="icon ph-fill ph-star"></i>
               <i class="icon ph-fill ph-star"></i>
@@ -71,7 +72,7 @@
 
         <div class="intro-spacing-2">
           <div class="overview-brief">
-            <p id="dish-description">
+            <p id="dish-description-mobile">
               A quick, no-bake dessert that tastes like summer itself. This
               light and tangy key lime icebox cake combines the rich, indulgent
               flavor of key lime pie with an airy, refreshing finish — perfect
@@ -113,12 +114,32 @@
               </div>
             </section>
           </div>
-          <a
-            href="#section-ingredients-tools"
-            class="btn btn-nav"
-            id="btn-get-ingredients"
-            >Get Ingredients</a
-          >
+          <div class="desciption-and-btn-desk">
+            <div class="hide-in-mobile">
+            <div class="opening-comment-line">
+            <p class="opening-comment">“So easy, and so yummy”</p>
+            <div class="stars">
+              <i class="icon ph-fill ph-star"></i>
+              <i class="icon ph-fill ph-star"></i>
+              <i class="icon ph-fill ph-star"></i>
+              <i class="icon ph-fill ph-star"></i>
+              <i class="icon ph-fill ph-star"></i>
+            </div>
+          </div>
+            <p class="dish-description">
+              A quick, no-bake dessert that tastes like summer itself. This
+              light and tangy key lime icebox cake combines the rich, indulgent
+              flavor of key lime pie with an airy, refreshing finish — perfect
+              for those hot, lazy days.
+            </p>
+            </div>
+            <a
+                href="#section-ingredients-tools"
+                class="btn btn-nav"
+                id="btn-get-ingredients"
+                >Get Ingredients</a
+            >
+          </div>
           <section id="nutrition-facts-section">
             <h3>Nutrition facts</h3>
             <div class="nutrition-facts-entry">
