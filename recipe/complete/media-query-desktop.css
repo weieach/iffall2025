@@ -13,6 +13,7 @@
   main{
     width: 100vw;
     overflow-x: hidden;
+    border: 1px solid #C1C2BD;
   }
 
   h1 {
@@ -287,7 +288,7 @@
     background-color: var(--bg-color);
     height: 750px;
     width: 100vw;
-    border: 1px solid #C1C2BD;
+    /* border: 1px solid #C1C2BD; */
     
   }
 
