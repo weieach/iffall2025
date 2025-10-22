@@ -445,7 +445,7 @@ visibility: none;
 }
 
 .cooking-copy h3{
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     
 }
 
@@ -470,11 +470,11 @@ select{
 }
 
   .step-mob ul{
-    padding: 0px 1rem;
+    padding: 0px 1rem 0px 0px;
   }
 
   .step-mob ul li p, .step-mob ul li{
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 400;
     margin: 8px;
 
