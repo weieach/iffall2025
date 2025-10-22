@@ -164,7 +164,6 @@ stepSelector.addEventListener("change", () => {
     nextStep.innerHTML = "<strong>Next: </strong>" + headerContent[stepNum + 1];
 
     stepContentText.innerHTML = stepContent[stepNum];
-<<<<<<< HEAD
 });
 
 // const toggleSidebar = document.getElementById("hamburger-menu");
@@ -181,6 +180,3 @@ stepSelector.addEventListener("change", () => {
 //     sidebar.close();
 //   });
 // }
-=======
-});
->>>>>>> parent of 85a437f (workable sidebar)
