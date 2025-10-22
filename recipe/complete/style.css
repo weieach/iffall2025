@@ -32,7 +32,7 @@ h1 {
   margin-top: 75px;
     grid-column: 2 / span 1;
     position: sticky;
-    top: 70px;
+    top: 60px;
     z-index: -1;
 }
 
@@ -51,7 +51,6 @@ h3 {
     display: none;
 }
 
-#how
 
 .hide-in-desktop{
     display: block;
@@ -398,7 +397,7 @@ visibility: none;
   max-width: 140px;
 }
 
-#section-instructions{
+#section-instructions-mobile{
     min-height: calc(100vh - 66px);
     padding: 30px 50px 50px 50px;
     background-color: var(--bg-color);
