@@ -91,7 +91,10 @@ nav{
 }
 
 
-
+#hamburger-menu{
+    border: none;
+    background-color: none;
+}
 
 
 
@@ -503,9 +506,14 @@ select{
 
 
 #sidebar-mob{
-    height: calc(100vh-68px);
+    
     background-color: #FF931E;
     width: 100vw;
+    inset: 0;
+    width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
     
 }
 
