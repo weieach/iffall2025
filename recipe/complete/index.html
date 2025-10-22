@@ -47,7 +47,7 @@
             <a href="#section-ingredients-tools" class="btn">Ingredients</a>
           </li>
           <li>
-            <a href="#section-instructions" class="btn btn-secondary"
+            <a href="#section-instructions-desk" class="btn btn-secondary"
               >Start cookin’</a
             >
           </li>
@@ -314,12 +314,8 @@
                 </div>
               </div>
             </section>
-            <a
-              href="#section-title-instructions"
-              id="btn-start-cooking"
-              class="btn btn-nav"
-              >Start Cookin'</a
-            >
+            <a href="#section-instructions-mobile" id="btn-start-cooking"
+              class="btn btn-nav">Start Cookin'</a>
           </div>
         </div>
       </section>
@@ -332,20 +328,22 @@
             <form>
               <label for="dropdown"></label>
               <select name="dropdown" id="step-selector">
-                <option value="s1">Step 1</option>
-                <option value="s2">Step 2</option>
-                <option value="s3">Step 3</option>
-                <option value="s4">Step 4</option>
-                <option value="s5">Step 5</option>
-                <option value="s6">Step 6</option>
+                <option value="1">Step 1</option>
+                <option value="2">Step 2</option>
+                <option value="3">Step 3</option>
+                <option value="4">Step 4</option>
+                <option value="5">Step 5</option>
+                <option value="6">Step 6</option>
               </select>
             </form>
-            <p>Next: Mixing cream</p>
+            <p class="next-step-mob"><strong>Next: </strong> Mixing cream</p>
           </div>
-          <h3>
-            Whisk together sweetened condensed milk, lime zest, and lime juice
-            in a medium bowl.
-          </h3>
+          <div class="step-mob">
+            <h3>
+                Whisk together sweetened condensed milk, lime zest, and lime juice
+                in a medium bowl.
+            </h3>
+          </div>
         </div>
 
         <img
@@ -359,7 +357,7 @@
             class="icon-sequence"
             alt="step-1-materials">
 
-          <a href="" class="btn btn-nav">Next Step</a>
+          <a href="" class="btn btn-nav" id="btn-next">Next Step</a>
           <p class="mobile-interaction-note">
             Tap left / right side of screen to switch steps
           </p>
@@ -371,8 +369,14 @@
 
       <!-- desktop cooking -->
        <div class="desktop-cooking">
-    <h2 id="section-instructions-desk" class="hide-in-mobile">Cooking Instructions</h2>
       <section class="cooking-panel hide-in-mobile">
+        
+        <div class="img-panel">
+            <h2 id="section-instructions-desk" class="hide-in-mobile">Instructions</h2>
+          <img class="cooking-img"
+            src="assets/cooking-instruction-thumbnails/step1.png"
+            alt="step-1">
+        </div>
         <div class="steps">
           <section class="step step-1">
             <div class="step-header">
@@ -492,11 +496,6 @@
               alt="step2-icon-rep"
               class="instruction-thumbnail-desk">
           </section>
-        </div>
-        <div class="img-panel">
-          <img class="cooking-img"
-            src="assets/cooking-instruction-thumbnails/step1.png"
-            alt="step-1">
         </div>
       </section>
       </div>

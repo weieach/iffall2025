@@ -47,6 +47,8 @@ h3 {
   font-size: 1rem;
 }
 
+
+
 .hide-in-mobile{
     display: none;
 }
@@ -131,6 +133,11 @@ nav{
   border: 1px solid rgba(112, 111, 18, 0.5);
   border-radius: 20px;
   text-align: center;
+}
+
+.disable{
+    background: #CBCBCB;
+    color: #7e7e7e;
 }
 
 .btn-secondary{
@@ -444,14 +451,34 @@ select{
 
 
 .cooking-thumbnail{
-    width: 80%;
+    
     max-width: 300px;
+    flex-grow: 1;
     align-self: center;
+    max-height: 320px;
     /* border-bottom: 8px solid #414201; */
 }
 
+  .step-mob ul{
+    padding: 0px 1rem;
+  }
+
+  .step-mob ul li p, .step-mob ul li{
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 8px;
+
+  }
+
+  hr{
+    margin: 0.55rem 0px;
+  }
+
+
 .icon-sequence{
-    width: 100%;
+    max-height: 50px;
+    width: fit-content;
+    margin-inline: auto;
 }
 
 .cooking-pg-bottom{

@@ -276,7 +276,8 @@
     background-color: var(--bg-color);
     font-size: 6rem;
     padding-left: 70px;
-    border: 1px solid #C1C2BD;
+    /* border: 1px solid #C1C2BD; */
+    
   }
 
   .cooking-panel{
@@ -284,6 +285,7 @@
     background-color: var(--bg-color);
     height: 750px;
     width: 100vw;
+    border: 1px solid #C1C2BD;
     
   }
 
@@ -352,7 +354,7 @@
   }
 
   .step ul{
-    padding: 0px 20px;
+    padding: 0px 14px;
   }
 
   .step ul li p, .step ul li{
@@ -364,14 +366,19 @@
 
   .img-panel{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
     width: 70%;
     overflow: hidden;
+    gap: 80px;
+  }
+
+  .img-panel h2{
+    margin-top: 0;
   }
 
   .img-panel img{
     height: 460px;
+    align-self: center;
     
   }
 

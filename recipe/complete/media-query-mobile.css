@@ -11,6 +11,12 @@
     justify-content: center;
     width: 100%;
   }
+
+  .opening-comment-line {
+
+  margin-top: -0.875rem;
+  padding-bottom: 0.6rem;
+}
 }
 
 @media(min-width: 1040px){
