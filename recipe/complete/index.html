@@ -36,12 +36,12 @@
           <span class="material-symbols-outlined">menu</span>
         </div>
 
-        <div id="hide-this" class="logo hide-in-mobile">
+        <div class="logo hide-in-mobile">
           <i class="icon ph-fill ph-fork-knife"></i>
           <p>Key Lime Icebox Pie</p>
         </div>
 
-        <ul class="nav-tabs hide-in-mobile">
+        <ul id="nav-tabs" class="hide-in-mobile">
           <li><a href="#first-screen" class="btn">Overview</a></li>
           <li>
             <a href="#section-ingredients-tools" class="btn">Ingredients</a>
@@ -56,7 +56,7 @@
     </header>
     <main>
         <!-- sidebar -->
-      <!-- <dialog id="sidebar-mob">
+      <dialog id="sidebar-mob">
         <div class="logo">
           <i class="icon ph-fill ph-fork-knife"></i>
           <p>Key Lime Icebox Pie</p>
@@ -72,9 +72,10 @@
             >
           </li>
         </ul>
-        
-    </dialog> -->
-
+        <!-- <form method="dialog">
+            <input type="submit" value="Dismiss">
+        </form> -->
+    </dialog>
 
 
       <div id="first-screen"></div>
@@ -336,12 +337,8 @@
                 </div>
               </div>
             </section>
-            <a
-              href="#section-instructions-mobile"
-              id="btn-start-cooking"
-              class="btn btn-nav"
-              >Start Cookin'</a
-            >
+            <a href="#section-instructions-mobile" id="btn-start-cooking"
+              class="btn btn-nav">Start Cookin'</a>
           </div>
         </div>
       </section>
@@ -366,8 +363,8 @@
           </div>
           <div class="step-mob">
             <h3>
-              Whisk together sweetened condensed milk, lime zest, and lime juice
-              in a medium bowl.
+                Whisk together sweetened condensed milk, lime zest, and lime juice
+                in a medium bowl.
             </h3>
           </div>
         </div>
@@ -394,140 +391,136 @@
       </section>
 
       <!-- desktop cooking -->
-      <div class="desktop-cooking">
-        <section class="cooking-panel hide-in-mobile">
-          <div class="img-panel">
-            <h2 id="section-instructions-desk" class="hide-in-mobile">
-              Instructions
-            </h2>
-            <img
-              class="cooking-img"
-              src="assets/cooking-instruction-thumbnails/step1.png"
-              alt="step-1">
-          </div>
-          <div class="steps">
-            <section class="step step-1">
-              <div class="step-header">
-                <h3>Step 1</h3>
-                <p>Whisk together ingredients</p>
-              </div>
-              <div class="step-content">
+       <div class="desktop-cooking">
+      <section class="cooking-panel hide-in-mobile">
+        
+        <div class="img-panel">
+            <h2 id="section-instructions-desk" class="hide-in-mobile">Instructions</h2>
+          <img class="cooking-img"
+            src="assets/cooking-instruction-thumbnails/step1.png"
+            alt="step-1">
+        </div>
+        <div class="steps">
+          <section class="step step-1">
+            <div class="step-header">
+              <h3>Step 1</h3>
+              <p>Whisk together ingredients</p>
+            </div>
+            <div class="step-content">
+              <h4>
+                Whisk together sweetened condensed milk, lime zest, and lime
+                juice in a medium bowl.
+              </h4>
+            </div>
+            <img src="assets/icon-sequences/step1.png" alt="step1-icon-rep">
+          </section>
+          <section class="step step-2 hide-step">
+            <div class="step-header">
+              <h3>Step 2</h3>
+              <p>Mixing cream</p>
+            </div>
+            <div class="step-content">
+              <div>
                 <h4>
-                  Whisk together sweetened condensed milk, lime zest, and lime
-                  juice in a medium bowl.
+                  Beat 1 cup of the cream in a medium bowl with an electric
+                  mixer on medium until soft peaks form (tips curl).
                 </h4>
+                <hr>
+                <h4>Fold whipped cream into the lime mixture.</h4>
               </div>
-              <img src="assets/icon-sequences/step1.png" alt="step1-icon-rep">
-            </section>
-            <section class="step step-2 hide-step">
-              <div class="step-header">
-                <h3>Step 2</h3>
-                <p>Mixing cream</p>
-              </div>
-              <div class="step-content">
-                <div>
-                  <h4>
-                    Beat 1 cup of the cream in a medium bowl with an electric
-                    mixer on medium until soft peaks form (tips curl).
-                  </h4>
-                  <hr>
-                  <h4>Fold whipped cream into the lime mixture.</h4>
-                </div>
-              </div>
-              <img src="assets/icon-sequences/step2.png" alt="step2-icon-rep">
-            </section>
-            <section class="step step-3 hide-step">
-              <div class="step-header">
-                <h3>Step 3</h3>
-                <p>Adding graham crackers</p>
-              </div>
-              <div class="step-content">
-                <div>
-                  <h4>Adding graham crackers:</h4>
-                  <hr>
+            </div>
+            <img src="assets/icon-sequences/step2.png" alt="step2-icon-rep">
+          </section>
+          <section class="step step-3 hide-step">
+            <div class="step-header">
+              <h3>Step 3</h3>
+              <p>Adding graham crackers</p>
+            </div>
+            <div class="step-content">
+              <div>
+                <h4>Adding graham crackers:</h4>
+                <hr>
 
-                  <ul>
-                    <li>
-                      <p>
-                        Arrange half of the graham cracker pieces in an even
-                        layer in the bottom of a 9-inch pie plate, breaking
-                        crackers as needed to fit.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Spoon half of the filling over the top and gently spread
-                        to an even layer.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Top with the remaining graham cracker pieces and the
-                        remaining filling.
-                      </p>
-                    </li>
-                  </ul>
-                </div>
+                <ul>
+                  <li>
+                    <p>
+                      Arrange half of the graham cracker pieces in an even layer
+                      in the bottom of a 9-inch pie plate, breaking crackers as
+                      needed to fit.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Spoon half of the filling over the top and gently spread
+                      to an even layer.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Top with the remaining graham cracker pieces and the
+                      remaining filling.
+                    </p>
+                  </li>
+                </ul>
               </div>
-              <img src="assets/icon-sequences/step3.png" alt="step2-icon-rep">
-            </section>
-            <section class="step step-4 hide-step">
-              <div class="step-header">
-                <h3>Step 4</h3>
-                <p>Cover and freeze 4hrs</p>
+            </div>
+            <img src="assets/icon-sequences/step3.png" alt="step2-icon-rep">
+          </section>
+          <section class="step step-4 hide-step">
+            <div class="step-header">
+              <h3>Step 4</h3>
+              <p>Cover and freeze 4hrs</p>
+            </div>
+            <div class="step-content">
+              <h4>
+                Cover and freeze 4 hours or until firm. Keep remaining cream
+                chilled until ready to serve.
+              </h4>
+            </div>
+          </section>
+          <section class="step step-5 hide-step">
+            <div class="step-header">
+              <h3>Step 5</h3>
+              <p>Let stand 10 minutes</p>
+            </div>
+            <div class="step-content">
+              <h4>To serve, remove pie from freezer; let stand 10 minutes.</h4>
+            </div>
+          </section>
+          <section class="step step-6 hide-step">
+            <div class="step-header">
+              <h3>Step 6</h3>
+              <p>Add topping (optional)</p>
+            </div>
+            <div class="step-content">
+              <div>
+                <h4>To serve with the optional whipped cream:</h4>
+                <hr>
+                <ul>
+                  <li>
+                    <p>
+                      Beat remaining 3/4 cup cream, powdered sugar, and vanilla
+                      in a medium bowl with an electric mixer on medium speed
+                      until soft peaks form (tips curl).
+                    </p>
+                  </li>
+                  <li><p>Spread or pipe whipped cream over filling.</p></li>
+                  <li>
+                    <p>
+                      If desired, top with crushed graham crackers and key lime
+                      zest.
+                    </p>
+                  </li>
+                </ul>
               </div>
-              <div class="step-content">
-                <h4>
-                  Cover and freeze 4 hours or until firm. Keep remaining cream
-                  chilled until ready to serve.
-                </h4>
-              </div>
-            </section>
-            <section class="step step-5 hide-step">
-              <div class="step-header">
-                <h3>Step 5</h3>
-                <p>Let stand 10 minutes</p>
-              </div>
-              <div class="step-content">
-                <h4>
-                  To serve, remove pie from freezer; let stand 10 minutes.
-                </h4>
-              </div>
-            </section>
-            <section class="step step-6 hide-step">
-              <div class="step-header">
-                <h3>Step 6</h3>
-                <p>Add topping (optional)</p>
-              </div>
-              <div class="step-content">
-                <div>
-                  <h4>To serve with the optional whipped cream:</h4>
-                  <hr>
-                  <ul>
-                    <li>
-                      <p>
-                        Beat remaining 3/4 cup cream, powdered sugar, and
-                        vanilla in a medium bowl with an electric mixer on
-                        medium speed until soft peaks form (tips curl).
-                      </p>
-                    </li>
-                    <li><p>Spread or pipe whipped cream over filling.</p></li>
-                    <li>
-                      <p>
-                        If desired, top with crushed graham crackers and key
-                        lime zest.
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <img
-                src="assets/icon-sequences/step6.png"
-                alt="step2-icon-rep"
-                class="instruction-thumbnail-desk">
-            </section>
-          </div>
-        </section>
+            </div>
+            <img
+              src="assets/icon-sequences/step6.png"
+              alt="step2-icon-rep"
+              class="instruction-thumbnail-desk">
+          </section>
+        </div>
+      </section>
       </div>
     </main>
     <footer></footer>

@@ -16,7 +16,7 @@ scroll-behavior: smooth;
 
 main {
   color: #414202;
-  position: relative;
+  
   z-index: -2;
 }
 
@@ -91,6 +91,7 @@ nav{
 }
 
 
+<<<<<<< HEAD
 #hamburger-menu{
     border: none;
     background-color: none;
@@ -98,11 +99,13 @@ nav{
 
 
 
+=======
+>>>>>>> parent of 85a437f (workable sidebar)
 .material-symbols-outlined{
     color: #414201;
 }
 
-.nav-tabs{
+#nav-tabs{
     
     display: none;
 }
@@ -502,6 +505,7 @@ select{
     display: none;
 }
 
+<<<<<<< HEAD
 
 
 
@@ -535,3 +539,5 @@ background-color: #FF931E;
     font-family: Norman;
     font-size: 2.75rem;
 }
+=======
+>>>>>>> parent of 85a437f (workable sidebar)
