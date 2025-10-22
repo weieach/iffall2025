@@ -16,7 +16,7 @@ scroll-behavior: smooth;
 
 main {
   color: #414202;
-  
+  position: relative;
   z-index: -2;
 }
 
@@ -91,11 +91,15 @@ nav{
 }
 
 
+
+
+
+
 .material-symbols-outlined{
     color: #414201;
 }
 
-#nav-tabs{
+.nav-tabs{
     
     display: none;
 }
@@ -495,3 +499,23 @@ select{
     display: none;
 }
 
+
+
+
+#sidebar-mob{
+    height: calc(100vh-68px);
+    background-color: #FF931E;
+    width: 100vw;
+    
+}
+
+.nav-tabs-2{
+    
+    list-style: none;
+    padding: 0;
+}
+
+.nav-tabs-2 .btn{
+    font-family: Norman;
+    font-size: 2.75rem;
+}

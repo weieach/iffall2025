@@ -165,3 +165,18 @@ stepSelector.addEventListener("change", () => {
 
     stepContentText.innerHTML = stepContent[stepNum];
 });
+
+const toggleSidebar = document.getElementById("hamburger-menu");
+const sidebar = document.getElementById("sidebar-mob");
+const sidebarNavs = document.querySelectorAll(".btn-sidebar");
+
+toggleSidebar.addEventListener("click", ()=> {
+    sidebar.showModal();
+    
+})
+
+for (const btn of sidebarNavs) {
+  btn.addEventListener("click", () => {
+    sidebar.close();
+  });
+}

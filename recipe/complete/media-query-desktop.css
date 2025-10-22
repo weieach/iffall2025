@@ -13,6 +13,7 @@
   main{
     width: 100vw;
     overflow-x: hidden;
+    border: 1px solid #C1C2BD;
   }
 
   h1 {
@@ -43,18 +44,18 @@
     display: none;
   }
 
-  #logo {
+  .logo {
     display: flex;
     gap: 8px;
   }
 
-  #nav-tabs {
+  .nav-tabs {
     display: flex;
     align-items: center;
     gap: 40px;
   }
 
-  #nav-tabs li {
+  .nav-tabs li {
     display: block;
     font-family: Raleway;
     list-style: none;
@@ -274,18 +275,24 @@
 
   #section-instructions-desk{
     background-color: var(--bg-color);
-    font-size: 6rem;
-    padding-left: 70px;
+    
+    padding-left: clamp(10px, 10%, 70px);
     /* border: 1px solid #C1C2BD; */
+    font-size: 5rem;
     
   }
+
+  .desktop-cooking{
+    /* border: 1px solid #C1C2BD; */
+  }
+  
 
   .cooking-panel{
     display: flex;
     background-color: var(--bg-color);
     height: 750px;
     width: 100vw;
-    border: 1px solid #C1C2BD;
+    
     
   }
 
@@ -331,15 +338,15 @@
   }
 
   .step h3{
-    font-size: 1.4rem;
-  }
-
-  .step-header p{
     font-size: 1.2rem;
   }
 
+  .step-header p{
+    font-size: 1rem;
+  }
+
 .step-content h4{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 700;
     font-family: Raleway;
 
@@ -358,9 +365,9 @@
   }
 
   .step ul li p, .step ul li{
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 400;
-    margin: 8px;
+    margin: 12px;
 
   }
 
@@ -368,6 +375,7 @@
     display: flex;
     flex-direction: column;
     width: 70%;
+    
     overflow: hidden;
     gap: 80px;
   }
