@@ -334,15 +334,15 @@
   }
 
   .step h3{
-    font-size: 1.4rem;
-  }
-
-  .step-header p{
     font-size: 1.2rem;
   }
 
+  .step-header p{
+    font-size: 1rem;
+  }
+
 .step-content h4{
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     font-family: Raleway;
 
@@ -361,9 +361,9 @@
   }
 
   .step ul li p, .step ul li{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 400;
-    margin: 8px;
+    margin: 12px;
 
   }
 
