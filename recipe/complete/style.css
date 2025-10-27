@@ -505,7 +505,6 @@ select{
     display: none;
 }
 
-<<<<<<< HEAD
 
 
 
@@ -539,5 +538,12 @@ background-color: #FF931E;
     font-family: Norman;
     font-size: 2.75rem;
 }
-=======
->>>>>>> parent of 85a437f (workable sidebar)
+
+
+footer{
+    padding: 20px 70px;
+    background-color: #FF941D;
+    font-weight: 700;
+    
+    align-self: flex-end;
+}
