@@ -1,0 +1,166 @@
+*{
+    font-family: "Raleway", system-ui;
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth
+
+}
+
+html{
+    --primary-color: #FEF13C;
+    --secondary-color: #6491E6;
+    --button-text-color: #5D4438;
+}
+
+header{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 19% 173px 280px 1fr;
+    grid-auto-rows: auto;
+    /* margin-top: 100px; */
+    /* height: 2000px; */
+     align-items: center;
+}
+
+#header-content{
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 8% 0px 7%;
+}
+
+nav ul{
+    padding: 40px 0px;
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    text-wrap: nowrap;
+    
+}
+
+nav ul a{
+    text-decoration: none;
+    color: var(--button-text-color);
+}
+
+#logo-link{
+    z-index: 12;
+}
+
+#logo{
+    z-index: 50;
+    width: 70px;
+    height: 62px;
+}
+
+#clock{
+    font-family: "Micro 5", system-ui;
+    font-size: 1.6rem;
+    color: var(--secondary-color);
+}
+
+body{
+    background-color: #E6E6E6;
+}
+
+h1{
+    font-family: "Micro 5", system-ui;
+    font-size: 15rem;
+    display: none;
+}
+
+p{
+    color: #2F2F2F;
+}
+
+.top-spacer{
+    height: 230px;
+    grid-row: 1;
+    grid-column: 1/-1;
+    /* background-color: #FEF13C; */
+}
+
+.tree-trunk{
+    height: 100vh;
+    position: absolute;
+    
+}
+
+.h1-big-text{
+    font-family: "Micro 5", system-ui;
+    font-size: 15rem;
+    
+}
+
+.h1-group{
+    position: relative;
+    grid-column: 2;
+    height: 180px;
+    z-index: 10;
+   
+}
+
+.h1-group-2{
+    grid-row: 4;
+    grid-column: 3;
+    height: 250px;
+}
+
+.h1-front{
+    position: relative;
+    /* grid-column: 1 / span 2; */
+    color: var(--primary-color);
+    z-index: 20;
+    -webkit-text-stroke-width: 0.5px; 
+  -webkit-text-stroke-color: var(--secondary-color);
+    
+}
+
+.h1-back{
+    position: absolute;
+    top: 10px;
+    left: -15px;
+    color: #6491E6;
+    /* visibility: hidden; */
+}
+
+.p-meet-fs{
+    grid-row: 2;
+    grid-column: 4;
+    width: 20ch;
+}
+
+/* #sketch-container{
+    width: 100%;
+    height: 400px;
+} */
+
+.script-title-wikimicrosite{
+    grid-row: 5;
+    grid-column: 2;
+}
+
+.btn-night-on{
+    grid-row: 6;
+    grid-column: 3;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 30px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 100px;
+    font-family: "Micro 5", system-ui;
+    font-size: 1.6rem;
+    color: var(--secondary-color);
+}
+
+.moon-icon{
+    width: 23px;
+}
