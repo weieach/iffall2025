@@ -193,7 +193,7 @@ p {
 
   /* font-size: 3rem; */
   font-size: 8rem;
-  font-weight: 200;
+  font-weight: 600;
   text-wrap: nowrap;
   -webkit-text-stroke-width: 6px;
   -webkit-text-stroke-color: var(--bg-color);
