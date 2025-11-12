@@ -195,7 +195,7 @@ p {
   font-size: 8rem;
   font-weight: 600;
   text-wrap: nowrap;
-  -webkit-text-stroke-width: 6px;
+  -webkit-text-stroke-width: 10px;
   -webkit-text-stroke-color: var(--bg-color);
   grid-column: sidebar-h2;
   paint-order: stroke fill;
