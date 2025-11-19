@@ -1,0 +1,16 @@
+:root{
+    --bg-color: #7795C6;
+    --dark-bg: #373331;
+    --pink: #E57EAA;
+    --highlight-yellow: #DF9B69;
+    --dark-green: #516B64;
+}
+
+.text-xl{
+    font-size: 1.9rem;
+    font-family: "Stack Sans Headline";
+}
+
+.text-lg{
+    font-size: 1.4rem;
+}

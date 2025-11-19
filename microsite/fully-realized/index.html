@@ -3,16 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flying Squirrel</title>
-
-    <!-- font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=League+Script&family=Micro+5&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sedgwick+Ave+Display&family=Stack+Sans+Headline:wght@200..700&family=Tiny5&family=Twinkle+Star&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.typekit.net/xoy0bkn.css">
-
-
-
+    <title>Nicole - Flying Squirrel Microsite</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Micro+5&family=Stack+Sans+Headline:wght@200..700&family=Stack+Sans+Text:wght@200..700&display=swap"
+      rel="stylesheet">
     <!-- icons -->
     <link
       rel="stylesheet"
@@ -23,215 +20,103 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
 
+    <!-- stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
+    <link rel="stylesheet" href="design-system.css">
   </head>
   <body>
     <header>
-      <img src="assets/tree-trunk.png" class="tree-trunk" alt="tree-trunk">
-      <div id="header-content">
-        <a href="#top-spacer" id="logo-link"
-          ><img src="assets/logo.png" id="logo" alt="logo"
-       ></a>
-        
-        <p id="clock"></p>
-        <nav>
-          <ul>
-            <li><a href="#section-3">Description</a></li>
-            <li><a href="#section-4">Life Cycle</a></li>
-            <li><a href="#section-5">Evolutionary History</a></li>
-          </ul>
-        </nav>
-        
-      </div>
+      <a href="#top-spacer" id="logo-link"
+        ><img src="assets/logo.png" id="logo" alt="logo"
+     ></a>
+      <nav>
+        <ul>
+          <li><a href="#section-2">Description</a></li>
+          <li><a href="#section-3">Life Cycle</a></li>
+          <li><a href="#section-4">Evolutionary History</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-      <section class="section-1-home">
-        <div class="top-spacer" id="top-spacer"></div>
-        <h1>Flying Squirrel</h1>
-        <div class="h1-group h1-group-1">
-          <p class="h1-big-text h1-front">Flying</p>
-          <p class="h1-big-text h1-back">Flying</p>
-        </div>
-        <div class="h1-group h1-group-2">
-          <p class="h1-big-text h1-front">Squirrel</p>
-          <p class="h1-big-text h1-back">Squirrel</p>
-        </div>
-
-        <p class="p-meet-fs">
-          Meet the flying squirrel—the little daredevil of the forest!
-        </p>
-        <h2 class="script-title script-title-wikimicrosite">
-          A Wiki Microsite
-        </h2>
-
-        <!-- <div id="sketch-container"></div> -->
-
-        <div class="btn-div-night-on">
-          <button type="button" class="btn btn-night-on">
-            <img src="assets/moon-icon.png" class="moon-icon" alt="moon-icon">
-            Turn the night on
-          </button>
-          <div class="button-underlay"></div>
-        </div>
-
-        <div class="spacer-homescreen-info"></div>
-      </section>
-
-      <!-- Screen 2: Basic Info -->
-      <section class="section-2-basic-info">
-        <h2 class="heading-basic-info">Basic Info</h2>
-        <div></div>
-        <img src="assets/curly-bracket.png" class="big-curly-bracket" alt="">
-        <ul class="list-basic-info">
-          <li>
-            <div>
-              <p class="data">150ft+</p>
-            </div>
-            <p class="description">Gliding distance</p>
-          </li>
-          <li>
-            <div>
-              <p class="data">FOREST</p>
-              <i class="ph-fill ph-tree-evergreen"></i>
-              <i class="ph-fill ph-tree"></i>
-            </div>
-            <p class="description">Habitat (Deciduous, Coniferous, Mixed)</p>
-          </li>
-          <li>
-            <div>
-              <p class="data">NOCTURNAL</p>
-              <i class="ph-fill ph-star-and-crescent"></i>
-            </div>
-            <p class="description">Active time of day</p>
-          </li>
-          <li>
-            <div>
-              <p class="data" id="data-adorable">Adorable</p>
-              <i class="ph-fill ph-heart"></i>
-              <i class="ph-fill ph-heart"></i>
-              <i class="ph-fill ph-heart"></i>
-            </div>
-            <p class="description">Human perception</p>
-          </li>
-        </ul>
-        <div class="spacer spacer-info-description"></div>
-      </section>
-
-      <!-- section 3: description -->
-      <section class="section-3-description" id="section-3">
-        <h2 class="script-title title-description fix-stroke">Description</h2>
-        <p>
-          Flying squirrels (scientifically known as Pteromyini or Petauristini)
-          are a tribe of 50 species of squirrels in the family Sciuridae.
-          Despite their name, flying squirrels are not capable of flight
-          like birds or bats; instead, they glide between trees. They are
-          capable of obtaining lift within the course of these flights, with
-          flights recorded to 90 metres (300 ft).
-        </p>
-        <div class="banner">
-          <img src="assets/fs-description-illu.png" alt="wristbone">
-          <p>
-            The direction and speed of the animal in midair are varied by
-            changing the positions of its limbs, largely controlled by
-            small cartilaginous wrist bones. There is a cartilage projection
-            from the wrist that the squirrel holds upwards during a glide. This
-            specialized cartilage is only present in flying squirrels and not
-            other gliding mammals. Possible origins for the styliform cartilage
-            have been explored, and the data suggests that it is most likely
-            homologous to the carpal structures that can be found in other
-            squirrels. This cartilage along with the manus forms a wing tip to
-            be used during gliding. After being extended, the wing tip may
-            adjust to various angles, controlling aerodynamic movements. The
-            wrist also changes the tautness of the patagium, a furry
-            parachute-like membrane that stretches from wrist to ankle. It has a
-            fluffy tail that stabilizes in flight. The tail acts as an
-            adjunct airfoil, working as an air brake before landing on a tree
-            trunk.
-          </p>
-        </div>
-        <div class="description-gliding-animals">
-          <h3>Similar gliding animals</h3>
-          <p>
-            The colugos, Petauridae, and Anomaluridae are gliding mammals which
-            are similar to flying squirrels through convergent evolution,
-            although are not particularly close in relation. Like the flying
-            squirrel, they are scansorial mammals that use their patagium to
-            glide, unpowered, to move quickly through their environment.
-          </p>
-          <div class="gliding-animal-flexbox">
-            <div>
+      <section id="homescreen">
+        <div class="flexbox-homescreen">
+          <div class="h1-col">
+            <h1>Flying Squirrel</h1>
+          </div>
+          <div class="left-col">
+            <div class="panel-door">
               <img
-                src="assets/Malayan-colugo-Galeopterus-variegatus 1.png"
-                alt="flying-lemur">
-              <p>Colugos <br>(Flying Lemur)</p>
+                src="assets-new/door.png"
+                class="door-img fill-width"
+                alt="door-with-sleeping-sign">
             </div>
-
-            <div>
+            <div class="panel-time">
+              <div class="sun-icon"></div>
+              
+            </div>
+            <div class="panel-row">
+                <p id="clock"></p>
+              </div>
+          </div>
+          <div class="right-col-big">
+            <div class="top-right-panel">
               <img
-                src="assets/sugar-glider-petaurus-breviceps-440nw-3718631a 1.png"
-                alt="springhare">
-              <p>Petauridae <br>(Springhare)</p>
+                src="assets-new/forest.png"
+                class="forest-img fill-width"
+                alt="forest">
+              <div class="div-portrait-caption-button">
+                <img
+                  src="assets-new/fs-portrait.png"
+                  alt="flying-squirrel-portrait">
+                <div>
+                  <p class="text-xl intro-text">
+                    Meet the
+                    <span class="highlight">flying squirrels</span> —the little
+                    daredevil of the forest! <span class="tech-note">Todo: Interaction</span>
+                  </p>
+                  <button type="button" class="text-lg">
+                    <img src="assets-new/moon-icon.png" class="moon-icon" alt="moon-icon">Turn
+                    the Night On
+                  </button>
+                </div>
+              </div>
+              <div class="human-quote">
+                  <p class="quote-text">“Adorable.”</p>
+                  <div>
+                    <div class="hearts">
+                      <i class="ph-fill ph-heart"></i>
+                      <i class="ph-fill ph-heart"></i>
+                      <i class="ph-fill ph-heart"></i>
+                      <i class="ph-fill ph-heart"></i>
+                      <i class="ph-fill ph-heart"></i>
+                    </div>
+                    <p>–Human Beings</p>
+                  </div>
+              </div>
             </div>
-            <div>
-              <img src="assets/scary-tailed.png" alt="scary-tailed-squirrel">
-              <p>Anomaluridae <br>(Scary-tailed squirrel)</p>
+            <div class="panel-distance-food">
+              <div class="panel">
+              <div class="panel-distance">
+                
+              </div>
+              <div class="panel-row">
+                  <p>Flying Distance</p>
+                </div>
+                </div>
+                <div class="panel">
+              <div class="panel-food">
+                
+              </div>
+              <div class="panel-row">
+                  <p>Favorite Food</p>
+                </div>
+                </div>
             </div>
           </div>
-          <div class="do-you-know">
-            <div>
-              <h3>Do you know?</h3>
-              <p>
-                In 2019 it was observed, by chance, that a flying
-                squirrel fluoresced pink under UV light. Subsequent research by
-                biologists at Northland College in Northern Wisconsin found that
-                this is true for all three species of North American flying
-                squirrels. At this time it is unknown what purpose this serves.
-                Non-flying squirrels do not fluoresce under UV light.
-              </p>
-            </div>
-            <img src="assets/xray.png" alt="xray-scan">
-          </div>
-        </div>
-        <div class="spacer spacer-description-lifecycle"></div>
-      </section>
-
-      <!-- section 4: life cycle -->
-      <section class="section-4-lifecycle" id="section-4">
-        <h2 class="script-title title-lifecycle">Life Cycle</h2>
-        <div class="body-type">
-          <p>
-            The life expectancy of flying squirrels in the wild is about six years, and flying squirrels can live up to fifteen years in zoos. The mortality rate in young flying squirrels is high because of predators and diseases. Predators of flying squirrels include tree snakes, raccoons, owls, martens, fishers, coyotes, bobcats, and feral cats. In the Pacific Northwest of North America, the northern spotted owl (Strix occidentalis) is a common predator of flying squirrels.
-          </p>
-          <h3>Diet</h3>
-          <p>
-            Flying squirrels can easily forage for food in the night, given their highly developed sense of smell. They harvest fruits, nuts, fungi, and birds' eggs. Many gliders have specialized diets and there is evidence to believe that gliders may be able to take advantage of scattered protein deficient food. Additionally, gliding is a quick form of locomotion and by reducing travel time between patches, they can increase the amount of foraging time.
-          </p>
-          <img src="assets/menu.png" class="menu-img" alt="list-of-diet">
-          <h3>Reproduction</h3>
-          <p>
-            The mating season for flying squirrels is during February and March. When the infants are born, the female squirrels live with them in maternal nest sites. The mothers nurture and protect them until they leave the nest. The males do not participate in nurturing their offspring. At birth, flying squirrels are mostly hairless, apart from their whiskers, and most of their senses are not present. Their internal organs are visible through the skin, and their sex can be signified. By week five, they are almost fully developed. At that point, they can respond to their environment and start to develop a mind of their own. Through the upcoming weeks of their lives, they practice leaping and gliding. After two and a half months, their gliding skills are perfected, they are ready to leave the nest, and they are capable of independent survival.
-          </p>
-        </div>
-        <div class="spacer spacer-lifecycle-evolution"></div>
-      </section>
-
-      <!-- section 5: evolutionary history-->
-      <section class="section-5-evolution" id="section-5">
-        <h2 class="script-title">Evolutionary History</h2>
-        <div class="body-type-2">
-          <p>Prior to the 21st century, the evolutionary history of the flying squirrel was frequently debated. This debate was clarified greatly as a result of two molecular studies. These studies found support that flying squirrels originated 18–20 million years ago, are monophyletic, and have a sister relationship with tree squirrels. Due to their close ancestry, the morphological differences between flying squirrels and tree squirrels reveal insight into the formation of the gliding mechanism. Compared to squirrels of similar size, flying squirrels, northern and southern flying squirrels show lengthening in bones of the lumbar vertebrae and forearm, whereas bones of the feet, hands, and distal vertebrae are reduced in length. Such differences in body proportions reveal the flying squirrels' adaptation to minimize wing loading and to increase maneuverability while gliding. The consequence for these differences is that unlike regular squirrels, flying squirrels are not well adapted for quadrupedal locomotion and therefore must rely more heavily on their gliding abilities.</p>
-          <img src="assets/fs-in-dark.png" alt="flying-squirrel-in-dark">
-          <p>Several hypotheses have attempted to explain the evolution of gliding in flying squirrels. One possible explanation is related to energy efficiency and foraging. Gliding is an energetically efficient way to progress from one tree to another while foraging, as opposed to climbing down trees and maneuvering on the ground floor or executing dangerous leaps in the air. By gliding at high speeds, flying squirrels can rummage through a greater area of forest more quickly than tree squirrels. Flying squirrels can glide long distances by increasing their aerial speed and increasing their lift.</p>
-          <p>Other hypotheses state that the mechanism evolved to avoid nearby predators and prevent injuries. If a dangerous situation arises on a specific tree, flying squirrels can glide to another, and thereby typically escape the previous danger. Furthermore, take-off and landing procedures during leaps, implemented for safety purposes, may explain the gliding mechanism. While leaps at high speeds are important to escape danger, the high-force impact of landing on a new tree could be detrimental to a squirrel's health. Yet the gliding mechanism of flying squirrels involves structures and techniques during flight that allow for great stability and control. If a leap is miscalculated, a flying squirrel may easily steer back onto the original course by using its gliding ability. A flying squirrel also creates a large glide angle when approaching its target tree, decreasing its velocity due to an increase in air resistance and allowing all four limbs to absorb the impact of the target.</p>
         </div>
       </section>
-      <div class="spacer spacer-evolution-end"></div>
-      <img src="assets/forest-grass.png" class="forest-grass-img" alt="forest-grass">
     </main>
     <footer></footer>
-
     <script src="js/script.js"></script>
-    <!-- <script src="js/sketch.js"></script> -->
   </body>
 </html>
