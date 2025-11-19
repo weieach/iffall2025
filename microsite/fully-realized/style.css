@@ -31,7 +31,7 @@ nav ul a{
 }
 
 body{
-    background-color: var(--pink);
+    background-color: var(--bg-color);
 }
 
 
@@ -147,7 +147,7 @@ p{
     display: flex;
     flex-direction: column;
     height: 100vh;
-    
+    background-color: var(--pink);
 }
 
 .fill-width{
