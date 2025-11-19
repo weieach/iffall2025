@@ -1,0 +1,63 @@
+.banner{
+    background-color: var(--bg-dark);
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: 1/-1;
+    grid-row: 12;
+    height: 100vh;
+}
+
+.section-old{
+    width: 800px;
+    margin-inline: auto;
+    margin: 80px auto;
+}
+
+.section-old img {
+    width: 500px;
+}
+
+.section-old p{
+    width: 70ch;
+}
+
+.do-you-know{
+        display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+border: 1px dashed var(--highlight-yellow);
+padding: 20px 30px;
+gap: 30px;
+align-items: center;
+}
+
+.do-you-know img{
+    
+}
+
+.gliding-animal-flexbox{
+  grid-row: 3;
+  
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+  margin: 50px 0px;
+  
+}
+
+.gliding-animal-flexbox > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column; 
+  gap: 20px;
+  width: 60px;
+  
+}
+
+.gliding-animal-flexbox > div img{
+  width: 100%;
+}
+
+.gliding-animal-flexbox > div p{
+  text-align: center;
+}

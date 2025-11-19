@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     font-family: "Stack Sans Text", sans-serif;
+    scroll-behavior: smooth;
 }
 
 
@@ -33,12 +34,29 @@ body{
     background-color: var(--bg-color);
 }
 
+
+
+h1, h2, h3, h4{
+    font-family: "Micro 5", system-ui;
+    color: var(--dark-bg);
+}
+
 h1{
   font-family: "Micro 5", system-ui;
   text-wrap: nowrap;
   font-size: 15rem;
   transform: rotate(90deg);
   color: var(--bg-color);
+}
+
+h2{
+    font-size: 6rem;
+}
+
+h3{
+    font-size: 3rem;
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
 
 p{
