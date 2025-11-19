@@ -63,6 +63,18 @@ p{
     color: var(--dark-bg);
 }
 
+footer{
+    background-color: var(--dark-bg);
+    padding: 50px;
+}
+
+footer p{
+    color: var(--highlight-yellow);
+    width: 400px;
+    margin: auto;
+    
+}
+
 .tech-note{
     color: rgb(66, 237, 154);
     font-family: "Stack Sans Text", sans-serif;
@@ -259,3 +271,4 @@ p{
     border: 1px solid var(--dark-green);
     background-position: center;
 }
+
