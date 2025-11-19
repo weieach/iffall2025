@@ -64,7 +64,8 @@ p{
 }
 
 .tech-note{
-    color: darkgray;
+    color: rgb(66, 237, 154);
+    font-family: "Stack Sans Text", sans-serif;
 }
 
 #logo{
