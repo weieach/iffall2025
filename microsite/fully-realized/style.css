@@ -217,8 +217,10 @@ p{
 
 .ph-heart{
     color: var(--pink);
-      -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #947769;
+      -webkit-text-stroke-width: 1.5px;
+  /* -webkit-text-stroke-color: #947769; */
+    -webkit-text-stroke-color: var(--dark-bg);
+
     font-size: 1.75rem;
 }
 
@@ -226,6 +228,7 @@ p{
     display: flex;
     width: 100%;
     flex: 1;
+    background-color: var(--bg-color);
 }
 
 .panel{
