@@ -142,6 +142,7 @@ let smoother = ScrollSmoother.create({
 
 let btnNight = document.querySelector(".btn-night");
 let btnNightText = document.querySelector(".btn-night p");
+let doorImg = document.querySelector(".img-door");
 
 btnNight.addEventListener("mouseenter", () => {
   if(!btnNight.hasAttribute("disabled")){
@@ -205,6 +206,9 @@ btnNight.addEventListener("click", () => {
   .to(".panel-door", {
     background: "#141414",
   }, "<")
+  .to(".panel-food, .panel-distance", {
+    background: "#141414",
+  }, "<")
   .to(".h1-col, .scroll-flower, .panel-row, .top-right-panel", {
     backgroundColor: "#413F3D",
   }, "<")
@@ -231,10 +235,13 @@ btnNight.addEventListener("click", () => {
     morphSVG: "#moon-icon-night path",
     fill: "#92ACD7",
   })
+
+  //reveal portrait
   .to(".div-fs-portrait", {
     scale: 1.05,
+    delay: 1,
     duration: 0.2,
-  }, "+=1")
+  })
   .to(".img-fs-mask", {
     delay: 0.5,
     opacity: 0,
@@ -243,11 +250,20 @@ btnNight.addEventListener("click", () => {
   .to(".div-fs-portrait", {
     scale: 1,
     duration: 0.2,
-  });
-
+  })
+  //open door
+  .to(".img-door-sign, .letter-z", {
+    opacity: 0,
+  })
+  .set(doorImg, {
+    attr: { src: "assets/door-open.png" }
+  })
   //tree trunk
+  .to(".img-tree-trunk", {
+    opacity: 1,
+  }, "+=1")
 
-  
+
   // gsap.set(".img-door", {
 
   // });

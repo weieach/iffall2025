@@ -140,6 +140,21 @@ footer p{
     top: 820px;
 }
 
+.img-tree-trunk{
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    opacity: 0;
+}
+
+.img-fs{
+    position: absolute;
+    z-index: 100;
+    width: 200px;
+    top: 75%;
+    opacity: 0;
+}
+
 .ph-flower{
     position: relative;
     display: block;
