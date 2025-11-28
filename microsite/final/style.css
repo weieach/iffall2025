@@ -1,0 +1,408 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Stack Sans Text", sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 10px 7%;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+    
+}
+
+nav ul a{
+    text-decoration: none;
+    color: var(--dark-bg);
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+
+
+h1, h2, h3, h4{
+    font-family: "Micro 5", system-ui;
+    color: var(--dark-bg);
+}
+
+h1{
+  display: none;
+}
+
+h2{
+    font-size: 6rem;
+}
+
+h3{
+    font-size: 3rem;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+p{
+    color: var(--dark-bg);
+}
+
+footer{
+    background-color: var(--dark-bg);
+    padding: 50px;
+}
+
+footer p{
+    color: var(--highlight-yellow);
+    width: 400px;
+    margin: auto;
+    
+}
+
+.tech-note{
+    color: rgb(66, 237, 154);
+    font-family: "Stack Sans Text", sans-serif;
+}
+
+#logo{
+   width: 60px;
+  height: 54px;
+}
+
+#homescreen{
+    /* margin-top: 76px; */
+    height: 100vh;
+    width: 1440px;
+    margin-inline: auto;
+}
+
+.flexbox-homescreen{
+    display: flex;
+}
+
+.h1-col{
+    height: 100vh;
+    width: 14%;
+    /* flex-grow: 1; */
+    overflow-y: scroll;
+    background-color: var(--dark-green);
+    position: relative;
+    overflow: hidden;
+}
+
+.h1-scroll{
+  position: relative;
+    font-family: "Micro 5", system-ui;
+  text-wrap: nowrap;
+  font-size: 14rem;
+  transform: rotate(90deg);
+  font-weight: 100;
+  color: var(--h1-yellow);
+}
+
+.h1-scroll:first-of-type{
+    top: 0px;
+}
+
+.h1-scroll:not(:first-of-type){
+    top: 820px;
+}
+
+.ph-flower{
+    position: relative;
+    display: block;
+    width: fit-content;
+    background-color: var(--dark-green);
+    color: var(--h1-yellow);
+    font-size: 1.7rem;
+    right: -128px;
+}
+
+.ph-flower:nth-of-type(1){
+    top: -238px;
+}
+
+.ph-flower:nth-of-type(2){
+    top: 244px;
+}
+
+.ph-flower:nth-of-type(3){
+    top: 753px;
+}
+
+.ph-flower:nth-of-type(4){
+    top: 1232px;
+}
+
+
+
+.left-col{
+    width: 26%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.panel-door{
+    /* height: 710px; */
+    height: 77%;
+    background: linear-gradient(0deg, #425f57 0%, #abaaae 55%);
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.panel-door img{
+    /* mix-blend-mode: darken; */
+    width: 82%;
+    align-self: end;
+    justify-self: center;
+    margin-inline: auto;
+}
+
+.panel-time{
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    background-color: var(--dark-btn);
+    display: flex;
+}
+
+.panel-time img{
+    height: 100%;
+}
+
+.sun-icon{
+    position: absolute;
+    top: 60px;
+    left: 42%;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #F3C25B;
+    margin: auto;
+    z-index: 100;
+}
+
+
+.panel-row{
+    display: flex;
+    background-color: var(--dark-green);
+    text-align: center;
+    height: 40px;
+    
+    
+}
+
+.panel-row p{
+    color: var(--bg-color);
+    margin: auto;
+    text-align: center;
+}
+
+#clock{
+    font-family: "Micro 5";
+    
+    font-size: 2rem;
+    margin: auto;
+}
+
+/* .sun-icon{
+    background-color: var(--highlight-yellow);
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    margin: auto;
+    margin-top: 60px;
+} */
+
+
+/* right col */
+
+.right-col-big{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.fill-width{
+    width: 100%;
+}
+
+.top-right-panel{
+    padding-top: 76px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 45px;
+    padding-right: 100px;
+    gap: 20px;
+    height: 77%;
+}
+
+.forest-img{
+    margin-bottom: 10px;
+    width: 98%;
+}
+
+.div-portrait-caption-button{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    
+}
+
+.div-fs-portrait{
+    background-image: url("assets/fs-portrait.png");
+    width: 300px;
+    height: 207px;
+    background-size: cover;
+}
+
+
+.div-portrait-caption-button > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.intro-text{
+    width: 80%;
+}
+
+.highlight{
+    color: var(--pink);
+    font-family: "tiny5";
+    font-size: 2.4rem;
+    padding-left: 5px;
+}
+
+.div-portrait-caption-button button{
+    padding: 16px 34px;
+    display: flex;
+    font-weight: 700;
+    align-items: center;
+    gap: 16px;
+    color: var(--bg-color);
+    background-color: var(--dark-btn);
+    border-radius: 100px;
+    width: fit-content;
+    
+}
+
+.moon-icon{
+    width: 28px;
+}
+
+.human-quote{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.human-quote > *{
+    display: block;
+}
+
+.human-quote > div{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.quote-text{
+    font-family: "Micro 5";
+    font-size: 5.6rem;
+    color: var(--dark-btn);
+    display: flex;
+    align-self: center;
+}
+
+.quote-text span{
+    font-family: "Stack Sans Headline", sans-serif;
+    font-size: 5.2rem;
+    
+}
+
+.ph-heart{
+    color: var(--pink);
+      -webkit-text-stroke-width: 1.5px;
+  /* -webkit-text-stroke-color: #947769; */
+    -webkit-text-stroke-color: var(--dark-bg);
+
+    font-size: 1.75rem;
+}
+
+.panel-distance-food{
+    display: flex;
+    width: 100%;
+    /* flex: 1; */
+    height: 23%;
+    background-color: var(--bg-color);
+}
+
+.panel{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.panel:first-child{
+    width: 150%;
+}
+
+.panel-distance, .panel-food{
+    display: flex;
+    position: relative;
+}
+
+.panel-distance{
+    /* background-image: url("assets-new/distance.png");
+    background-size: contain;
+    background-repeat: no-repeat; */
+    
+    /* border: 1px solid var(--dark-green); */
+    /* background-position: center; */
+    background-color: var(--bg-gray);
+    height: 100%;
+    position: relative;
+    
+}
+
+.img-ruler{
+    width: 90%;
+    margin: inline;
+    height: fit-content;
+    position: relative;
+    top: 36%;
+    left: 5%;
+}
+
+
+.panel-food{
+    background-image: url("assets-new/food.png");
+    background-size: cover;
+    height: 100%;
+    background-repeat: no-repeat;
+    /* border: 1px solid var(--dark-green); */
+    background-position: center;
+    position: relative;
+}
+
+.panel-distance-food .panel-row{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
