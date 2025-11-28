@@ -2,7 +2,7 @@
     --bg-color: #ECEEE5;
     --bg-gray: #B8B7BE;
     --bg-green: #425F48;
-    --dark-btn: #3D3937;
+    --dark-btn: #373331;
     --pink: #E57EAA;
     --h1-yellow: #E8B953;
     --sky-blue: #96B3E1;
@@ -14,6 +14,7 @@
 .text-xl{
     font-size: 1.9rem;
     font-family: "Stack Sans Headline";
+    color: var(--dark-btn);
 }
 
 .text-lg{
