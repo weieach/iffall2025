@@ -31,7 +31,7 @@ nav ul a{
 }
 
 body{
-    background-color: var(--bg-color);
+    background-color: var(--dark-green);
 }
 
 
@@ -292,6 +292,7 @@ footer p{
 }
 
 .top-right-panel{
+    background-color: var(--bg-color);
     padding-top: 76px;
     display: flex;
     flex-direction: column;
