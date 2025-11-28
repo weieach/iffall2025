@@ -126,24 +126,25 @@ footer p{
     width: fit-content;
     background-color: var(--dark-green);
     color: var(--h1-yellow);
-    font-size: 1.7rem;
-    right: -128px;
+    font-size: 2.5rem;
+    /* border: 10px solid var(--dark-green); */
+    right: -122px;
 }
 
 .ph-flower:nth-of-type(1){
-    top: -238px;
+    top: -220px;
 }
 
 .ph-flower:nth-of-type(2){
-    top: 244px;
+    top: 228px;
 }
 
 .ph-flower:nth-of-type(3){
-    top: 753px;
+    top: 722px;
 }
 
 .ph-flower:nth-of-type(4){
-    top: 1232px;
+    top: 1190px;
 }
 
 
@@ -162,14 +163,47 @@ footer p{
     background: linear-gradient(0deg, #425f57 0%, #abaaae 55%);
     display: flex;
     padding-bottom: 20px;
+    position: relative;
 }
 
-.panel-door img{
+.img-door{
     /* mix-blend-mode: darken; */
     width: 82%;
     align-self: end;
     justify-self: center;
     margin-inline: auto;
+}
+
+
+.img-door-sign{
+    position: absolute;
+    top: 190px;
+    left: 24%;
+    width: 200px;
+    z-index: 100;
+}
+
+.letter-z {
+    position: absolute;
+    top: 285px;
+    left: 46%;
+    z-index: 100;
+}
+
+.z-small{
+    width: 16px;
+    left: 40%;
+}
+
+.z-mid{
+    width: 20px;
+    top: 277px;
+}
+
+.z-big{
+    width: 24px;
+    left: 53%;
+    top: 270px;
 }
 
 .panel-time{
@@ -248,7 +282,7 @@ footer p{
     flex-direction: column;
     padding-left: 45px;
     padding-right: 100px;
-    gap: 20px;
+    gap: 24px;
     height: 77%;
 }
 
@@ -269,6 +303,15 @@ footer p{
     width: 300px;
     height: 207px;
     background-size: cover;
+    position: relative;
+}
+
+.img-fs-mask{
+    width: 88%;
+    position: absolute;
+    right: 0;
+    top: 37%;
+
 }
 
 
@@ -302,8 +345,24 @@ footer p{
     
 }
 
+.div-button-arrow{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.ph-arrow-fat-left{
+    font-size: 2rem;
+    color: var(--dark-btn);
+}
+
 .moon-icon{
-    width: 28px;
+    width: 34px;
+}
+
+.moon-icon-detailed{
+    display: none;
+    width: 40px;
 }
 
 .human-quote{
@@ -386,10 +445,32 @@ footer p{
     margin: inline;
     height: fit-content;
     position: relative;
-    top: 36%;
+    top: 40%;
     left: 5%;
 }
 
+.plane-path{
+    position: absolute;
+    left: 15%;
+    top: 5%;
+    stroke-width: 6px;
+}
+
+.mask{
+    position: absolute;
+    left: 15%;
+    top: 5%;
+    width: 240px;
+    height: 68px;
+}
+
+.img-plane{
+    width: 150px;
+    position: absolute;
+    right: 10%;
+    top: 7%;
+    opacity: 0;
+}
 
 .panel-food{
     background-image: url("assets-new/food.png");
