@@ -78,7 +78,22 @@ footer p{
 
 #logo{
    width: 60px;
-  height: 54px;
+  height: 60px;
+}
+
+#logo-link{
+    position: relative;
+}
+
+#logo-link .ph-flower{
+  font-size: 3.95rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--pink);
+  z-index: 100;
+  background: #000000;
+  border-radius: 100%;
 }
 
 #homescreen{
@@ -132,7 +147,7 @@ footer p{
 }
 
 .ph-flower:nth-of-type(1){
-    top: -220px;
+    top: -236px;
 }
 
 .ph-flower:nth-of-type(2){
@@ -445,27 +460,27 @@ footer p{
     margin: inline;
     height: fit-content;
     position: relative;
-    top: 40%;
+    top: 38%;
     left: 5%;
 }
 
 .plane-path{
     position: absolute;
-    left: 15%;
+    left: 13%;
     top: 5%;
     stroke-width: 6px;
 }
 
 .mask{
     position: absolute;
-    left: 15%;
+    left: 13%;
     top: 5%;
     width: 240px;
     height: 68px;
 }
 
 .img-plane{
-    width: 150px;
+    width: 160px;
     position: absolute;
     right: 10%;
     top: 7%;
@@ -473,14 +488,43 @@ footer p{
 }
 
 .panel-food{
-    background-image: url("assets-new/food.png");
+    background-image: url("assets/spiral-bg.png");
     background-size: cover;
     height: 100%;
     background-repeat: no-repeat;
     /* border: 1px solid var(--dark-green); */
-    background-position: center;
+    background-position: center center;
     position: relative;
 }
+
+.img-plate{
+    width: 80%;
+    position: absolute;
+    top: 45%;
+    left: 10%;
+}
+
+.food-item{
+    position: absolute;
+    width: 24%;
+    top: 16%;
+}
+
+.img-acorn{
+    left: 20%;
+}
+
+.img-pine-nut{
+    left: 40%;
+    top: 30%;
+}
+
+.img-seed{
+    top: 20%;
+    right: 16%;
+    width: 26%;
+}
+
 
 .panel-distance-food .panel-row{
     position: absolute;
