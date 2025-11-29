@@ -54,7 +54,8 @@ body{
 
 h1, h2, h3, h4{
     font-family: "Micro 5", system-ui;
-    color: var(--dark-bg);
+    color: var(--dark-btn);
+    font-weight: 100;
 }
 
 h1{
@@ -63,6 +64,7 @@ h1{
 
 h2{
     font-size: 6rem;
+    margin-bottom: 0.5rem;
 }
 
 h3{
@@ -71,8 +73,17 @@ h3{
     margin-bottom: 10px;
 }
 
+h3, h4{
+    font-family: "Stack Sans Headline", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
 p{
-    color: var(--dark-bg);
+    color: var(--dark-btn);
+    font-size: 0.96rem;
+    font-family: "Stack Sans Text", sans-serif;
+
 }
 
 footer{
@@ -417,14 +428,19 @@ footer p{
 .div-portrait-caption-button button{
     padding: 16px 34px;
     display: flex;
-    font-weight: 700;
     align-items: center;
     gap: 16px;
-    color: var(--bg-color);
+
     background-color: var(--dark-btn);
     border-radius: 100px;
     width: fit-content;
     
+}
+
+button p{
+    color: var(--bg-color);
+    font-weight: 700;
+    font-size: 1.4rem;
 }
 
 .div-button-arrow{
@@ -666,4 +682,27 @@ footer p{
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+/* body sections */
+
+.body-sections{
+    width: 100%;
+    background-color: var(--bg-color);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.body-sections > section{
+    width: 716px;
+    /* margin-inline: auto; */
+    margin: 100px auto;
+}
+
+.body-sections > section p{
+    margin-bottom: 10px;
+}
+
+.section-2{
+    
 }
