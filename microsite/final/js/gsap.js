@@ -182,6 +182,9 @@ btnNight.addEventListener("click", () => {
     .set("body", {
       overflow: "auto",
     })
+    .set(".fact-1", {
+      display: "block",
+    })
     // .set(".panel-distance-food", {
     //   marginTop: "77vh",
     // })
@@ -303,8 +306,7 @@ btnNight.addEventListener("click", () => {
 
     //reveal portrait
     .to(".div-fs-portrait", {
-      scale: 1.05,
-      delay: 1,
+      scale: 1.2,
       duration: 0.2,
     })
     .to(".img-fs-mask", {
@@ -335,19 +337,26 @@ btnNight.addEventListener("click", () => {
     .set(".img-fs", {
       scaleX: -1,
     })
-    .set(".img-fs, .fact-1, .top-right-quickfacts-panel", {
+    .set(".img-fs", {
       display: "block",
+      opacity: 1,
+    })
+    .set(".top-right-quickfacts-panel", {
+      display: "flex",
+    })
+    .to(".fact-1, .top-right-quickfacts-panel", {
       opacity: 1,
     });
   // .to(".img-fs", {
   //   opacity: 1,
   // });
 
+
   //begins scroll based quick facts
   ScrollTrigger.create({
     trigger: ".h1-col",
     start: "top top",
-    end: "+=200%", // how long you want the grid to stay pinned
+    end: "+=300%", // how long you want the grid to stay pinned
     pin: ".h1-col",
     pinSpacing: true,
     anticipatePin: 1,
@@ -355,7 +364,7 @@ btnNight.addEventListener("click", () => {
   ScrollTrigger.create({
     trigger: ".left-col",
     start: "top top",
-    end: "+=200%", // how long you want the grid to stay pinned
+    end: "+=300%", // how long you want the grid to stay pinned
     pin: ".left-col",
     pinSpacing: true,
     anticipatePin: 1,
@@ -363,15 +372,15 @@ btnNight.addEventListener("click", () => {
   ScrollTrigger.create({
     trigger: ".left-col",
     start: "top top",
-    end: "+=200%", // how long you want the grid to stay pinned
+    end: "+=300%", // how long you want the grid to stay pinned
     pin: ".right-col-big",
     pinSpacing: true,
     anticipatePin: 1,
   });
 
-  let quickFactsTl = gsap.timeline({
+  let fact2Tl = gsap.timeline({
     scrollTrigger: {
-      trigger: ".img-fs",
+      trigger: ".fact-1",
       start: "top top",
       scrub: 1,
       markers: true,
@@ -380,9 +389,21 @@ btnNight.addEventListener("click", () => {
   // quickFactsTl.set(".h1-col, .left-col, .panel-distance-food", {
   //   pin: true,
   // })
-  quickFactsTl.from(".fact-1", {
-    yPercent: 100,
+  fact2Tl.from(".fact-2", {
+    yPercent: 150,
   });
+
+  let fact3Tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".fact-2",
+      start: "top top",
+      scrub: 1,
+      markers: true,
+    },
+  });
+  fact3Tl.from(".fact-3", {
+    yPercent: 300,
+  })
 
   // gsap.set(".img-door", {
 

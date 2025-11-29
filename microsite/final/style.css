@@ -102,7 +102,7 @@ footer p{
 
 #homescreen{
     /* margin-top: 76px; */
-    height: 300vh;
+    height: 400vh;
     width: 1440px;
     margin-inline: auto;
     /* position: sticky; */
@@ -483,6 +483,7 @@ footer p{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
     padding-bottom: 64px;
     display: none;
     opacity: 0;
@@ -491,11 +492,22 @@ footer p{
     
     padding-left: 45px;
     padding-right: 100px;
-    height: 100%;
+    height: 77%;
 }
+
 
 .fact-1{
     background-color: #96B3E1;
+    display: none;
+    opacity: 0;
+}
+
+.fact-2{
+    background-color: #E8B953;
+}
+
+.fact-3{
+    background-color: #EA8DA9;
 }
 
 .div-quickfact{
