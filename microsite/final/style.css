@@ -102,14 +102,15 @@ footer p{
 
 #homescreen{
     /* margin-top: 76px; */
-    height: 100vh;
+    height: 300vh;
     width: 1440px;
     margin-inline: auto;
-    
+    /* position: sticky; */
 }
 
 .flexbox-homescreen{
     display: flex;
+    height: 100vh;
 }
 
 .h1-col{
@@ -121,6 +122,10 @@ footer p{
     position: relative;
     overflow: hidden;
 }
+
+/* .h1-col, .left-col, .panel-distance-food{
+    position: sticky;
+} */
 
 .h1-scroll{
   position: relative;
@@ -152,7 +157,8 @@ footer p{
     z-index: 100;
     width: 200px;
     top: 75%;
-    opacity: 0;
+    /* opacity: 0; */
+    display: none;
 }
 
 .ph-flower{
@@ -314,21 +320,28 @@ footer p{
     display: flex;
     flex-direction: column;
     height: 100vh;
+    position: relative;
 }
 
 .fill-width{
     width: 100%;
 }
 
+.top-right-total{
+    height: 77%;
+    overflow: auto;
+}
+
 .top-right-panel{
     background-color: var(--bg-color);
-    padding-top: 76px;
+    padding-top: 90px;
     display: flex;
     flex-direction: column;
     padding-left: 45px;
     padding-right: 100px;
     gap: 24px;
-    height: 77%;
+    height: 100%;
+    
 }
 
 .forest-panel{
@@ -461,6 +474,62 @@ footer p{
 
     font-size: 1.75rem;
 }
+
+/* quick facts scroll */
+.top-right-quickfacts-panel{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 64px;
+    display: none;
+    opacity: 0;
+
+    padding-top: 90px;
+    
+    padding-left: 45px;
+    padding-right: 100px;
+    height: 100%;
+}
+
+.fact-1{
+    background-color: #96B3E1;
+}
+
+.div-quickfact{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.quickfact-text{
+    font-size: 3.125rem;
+    font-weight: 700;
+    color: var(--dark-btn);
+    font-family: "Stack Sans Headline";
+    line-height: 120%;
+
+}
+
+.fact-highlight{
+    color: var(--dark-blue);
+}
+
+.tip-scroll{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #413F3D;
+    font-family: "Stack Sans Text";
+}
+
+.tip-scroll .ph-fill{
+    font-size: 0.85rem;
+}
+
+/* 2 other panels */
 
 .panel-distance-food{
     display: flex;
