@@ -1,3 +1,4 @@
+
 gsap.registerPlugin(
   ScrollTrigger,
   ScrollSmoother,
@@ -346,17 +347,29 @@ btnNight.addEventListener("click", () => {
     })
     .to(".fact-1, .top-right-quickfacts-panel", {
       opacity: 1,
-    });
-  // .to(".img-fs", {
-  //   opacity: 1,
-  // });
-
+    })
+    .to(
+      ".left-col .panel-row",
+      {
+        backgroundColor: "#96B3E1",
+        duration: 0.3,
+      },"+=1").to(
+      ".left-col .panel-row p",
+      {
+        color: "#151515",
+        opacity: 1,
+        duration: 0.3,
+      },
+      0
+    );
 
   //begins scroll based quick facts
+
+  //pinning rest of homescreen
   ScrollTrigger.create({
     trigger: ".h1-col",
     start: "top top",
-    end: "+=300%", // how long you want the grid to stay pinned
+    end: "+=300%", 
     pin: ".h1-col",
     pinSpacing: true,
     anticipatePin: 1,
@@ -364,7 +377,7 @@ btnNight.addEventListener("click", () => {
   ScrollTrigger.create({
     trigger: ".left-col",
     start: "top top",
-    end: "+=300%", // how long you want the grid to stay pinned
+    end: "+=300%",
     pin: ".left-col",
     pinSpacing: true,
     anticipatePin: 1,
@@ -372,11 +385,15 @@ btnNight.addEventListener("click", () => {
   ScrollTrigger.create({
     trigger: ".left-col",
     start: "top top",
-    end: "+=300%", // how long you want the grid to stay pinned
+    end: "+=300%", 
     pin: ".right-col-big",
     pinSpacing: true,
     anticipatePin: 1,
   });
+
+
+
+    //COPY
 
   let fact2Tl = gsap.timeline({
     scrollTrigger: {
@@ -386,12 +403,40 @@ btnNight.addEventListener("click", () => {
       markers: true,
     },
   });
-  // quickFactsTl.set(".h1-col, .left-col, .panel-distance-food", {
-  //   pin: true,
-  // })
   fact2Tl.from(".fact-2", {
     yPercent: 150,
-  });
+  })
+  .to(
+      ".panel-distance .panel-row",
+      {
+        backgroundColor: "#E8B953",
+        duration: 0.3,
+      },
+      0
+    ).to(
+      ".panel-distance .panel-row p",
+      {
+        color: "#151515",
+        opacity: 1,
+        duration: 0.3,
+      },
+      0
+    )
+    .to(
+      ".left-col .panel-row",
+      {
+        backgroundColor: "#413F3D",
+        duration: 0.3,
+      },
+      0
+    ).to(
+      ".left-col .panel-row p",
+      {
+        color: "#A8A8A1",
+        duration: 0.3,
+      },
+      0
+    );
 
   let fact3Tl = gsap.timeline({
     scrollTrigger: {
@@ -404,10 +449,37 @@ btnNight.addEventListener("click", () => {
   fact3Tl.from(".fact-3", {
     yPercent: 300,
   })
-
-  // gsap.set(".img-door", {
-
-  // });
+  .to(
+      ".panel-food .panel-row",
+      {
+        backgroundColor: "#EA8DA9",
+        color: "#151515",
+        duration: 0.3,
+      },
+      0
+    ).to(
+      ".panel-food .panel-row p",
+      {
+        color: "#151515",
+        opacity: 1,
+        duration: 0.3,
+      },
+      0
+    ).to(
+      ".left-col .panel-row, .panel-distance .panel-row",
+      {
+        backgroundColor: "#413F3D",
+        duration: 0.3,
+      },
+      0
+    ).to(
+      ".left-col .panel-row p, .panel-distance .panel-row p",
+      {
+        color: "#A8A8A1",
+        duration: 0.3,
+      },
+      0
+    );
 });
 
 gsap.globalTimeline.timeScale(3);
