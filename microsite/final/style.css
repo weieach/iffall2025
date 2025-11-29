@@ -13,9 +13,21 @@ header{
     padding: 10px 7%;
     justify-content: space-between;
     width: 100%;
+    
+    
     position: fixed;
     top: 0;
+    
     z-index: 100;
+}
+
+header > div{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1360px;
+    margin-inline: auto;
 }
 
 body{
@@ -154,7 +166,7 @@ footer p{
 
 .img-fs{
     position: absolute;
-    z-index: 100;
+    z-index: 200;
     width: 200px;
     top: 60%;
     /* opacity: 0; */

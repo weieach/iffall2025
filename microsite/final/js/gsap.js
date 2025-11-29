@@ -1,4 +1,3 @@
-
 gsap.registerPlugin(
   ScrollTrigger,
   ScrollSmoother,
@@ -8,6 +7,12 @@ gsap.registerPlugin(
   MorphSVGPlugin,
   DrawSVGPlugin
 );
+
+//disable nav anchors upon entry
+document.querySelectorAll("nav a").forEach(a => {
+  a.style.pointerEvents = "none";
+  a.style.opacity = 0.5;
+});
 
 //logo
 let logo = document.querySelector("#logo-link");
@@ -171,6 +176,10 @@ let turnsNightTl = gsap.timeline();
 MorphSVGPlugin.convertToPath("circle, rect, ellipse, line, polygon, polyline");
 btnNight.addEventListener("click", () => {
   //stopping old timeline
+document.querySelectorAll("a").forEach(a => {
+  a.style.pointerEvents = "auto";
+  a.style.opacity = 1;
+});
   foodTl.restart();
   foodTl.kill();
   planeTl.pause();
@@ -207,6 +216,10 @@ btnNight.addEventListener("click", () => {
       opacity: 0.7,
       mixBlendMode: "multiply",
     })
+    .to("body", {
+      background: "#413F3D",
+    },
+      "<")
     .set(
       ".img-ruler",
       {
@@ -251,7 +264,7 @@ btnNight.addEventListener("click", () => {
       "<"
     )
     .to(
-      ".h1-col, .panel-row, .logo-flower",
+      ".h1-col, .panel-row",
       {
         backgroundColor: "#413F3D",
       },
@@ -353,7 +366,10 @@ btnNight.addEventListener("click", () => {
       {
         backgroundColor: "#96B3E1",
         duration: 0.3,
-      },"+=1").to(
+      },
+      "+=1"
+    )
+    .to(
       ".left-col .panel-row p",
       {
         color: "#151515",
@@ -369,7 +385,7 @@ btnNight.addEventListener("click", () => {
   ScrollTrigger.create({
     trigger: ".h1-col",
     start: "top top",
-    end: "+=300%", 
+    end: "+=300%",
     pin: ".h1-col",
     pinSpacing: true,
     anticipatePin: 1,
@@ -385,15 +401,15 @@ btnNight.addEventListener("click", () => {
   ScrollTrigger.create({
     trigger: ".left-col",
     start: "top top",
-    end: "+=300%", 
+    end: "+=300%",
     pin: ".right-col-big",
     pinSpacing: true,
     anticipatePin: 1,
   });
 
+  //COPY
 
-
-    //COPY
+  // MotionPathHelper.create(".img-fs");
 
   let fact2Tl = gsap.timeline({
     scrollTrigger: {
@@ -403,17 +419,18 @@ btnNight.addEventListener("click", () => {
       markers: true,
     },
   });
-  fact2Tl.from(".fact-2", {
-    yPercent: 150,
-  })
-  .to(
-      ".panel-distance .panel-row",
+  fact2Tl
+    .from(".fact-2", {
+      yPercent: 150,
+    })
+    .to(".panel-distance .panel-row",
       {
         backgroundColor: "#E8B953",
         duration: 0.3,
       },
       0
-    ).to(
+    )
+    .to(
       ".panel-distance .panel-row p",
       {
         color: "#151515",
@@ -429,14 +446,24 @@ btnNight.addEventListener("click", () => {
         duration: 0.3,
       },
       0
-    ).to(
+    )
+    .to(
       ".left-col .panel-row p",
       {
         color: "#A8A8A1",
         duration: 0.3,
       },
       0
-    );
+    )
+    // .to(".img-fs", {
+    //   motionPath:{
+    //     path: [{x: 100, y: 100}, {x: 300, y: 20}],
+    //     autoRotate: true,
+    //     align: ".plane-path path",
+    //   }
+    // });
+
+    
 
   let fact3Tl = gsap.timeline({
     scrollTrigger: {
@@ -446,10 +473,11 @@ btnNight.addEventListener("click", () => {
       markers: true,
     },
   });
-  fact3Tl.from(".fact-3", {
-    yPercent: 300,
-  })
-  .to(
+  fact3Tl
+    .from(".fact-3", {
+      yPercent: 300,
+    })
+    .to(
       ".panel-food .panel-row",
       {
         backgroundColor: "#EA8DA9",
@@ -457,7 +485,8 @@ btnNight.addEventListener("click", () => {
         duration: 0.3,
       },
       0
-    ).to(
+    )
+    .to(
       ".panel-food .panel-row p",
       {
         color: "#151515",
@@ -465,14 +494,16 @@ btnNight.addEventListener("click", () => {
         duration: 0.3,
       },
       0
-    ).to(
+    )
+    .to(
       ".left-col .panel-row, .panel-distance .panel-row",
       {
         backgroundColor: "#413F3D",
         duration: 0.3,
       },
       0
-    ).to(
+    )
+    .to(
       ".left-col .panel-row p, .panel-distance .panel-row p",
       {
         color: "#A8A8A1",
