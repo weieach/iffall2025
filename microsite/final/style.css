@@ -30,8 +30,11 @@ header > div{
     margin-inline: auto;
 }
 
+
+
+
 body{
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 nav ul{
@@ -46,10 +49,19 @@ nav ul a{
     color: var(--dark-bg);
 }
 
+
+
 body{
     background-color: var(--dark-green);
 }
 
+.mobile-only{
+    display: none;
+}
+
+.desktop-only{
+    display: block;
+}
 
 
 h1, h2, h3, h4{
@@ -87,15 +99,41 @@ p{
 }
 
 footer{
-    background-color: var(--dark-bg);
+    background-color: var(--darker-btn);
     padding: 50px;
+    padding-bottom: 80px;
+    
+    color: var(--bg-color);
+}
+
+footer a{
+    color: var(--bg-color);
+}
+
+.footer-flexbox{
+    display: flex;
+    width: 716px;
+    gap: 5rem;
+    margin-inline: auto;
+}
+
+.footer-flexbox > div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    text-align: left;
+    gap: 8px;
 }
 
 footer p{
-    color: var(--highlight-yellow);
-    width: 400px;
-    margin: auto;
+    color: var(--bg-gray);
     
+}
+
+footer .name{
+    font-size: 1.25rem;
+    color: var(--bg-color);
 }
 
 .tech-note{
@@ -113,7 +151,7 @@ footer p{
 }
 
 #logo-link .ph-flower{
-  font-size: 3.95rem;
+  font-size: 63.2px;
   position: absolute;
   top: 0;
   left: 0;
@@ -121,6 +159,16 @@ footer p{
   z-index: 100;
   background: #000000;
   border-radius: 100%;
+}
+
+.tooltip{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--dark-btn);
+    border: 1.5px dashed var(--dark-btn);
+    padding: 4px 15px ;
+    border-radius: 100px;
 }
 
 #homescreen{
@@ -688,21 +736,158 @@ button p{
 
 .body-sections{
     width: 100%;
-    background-color: var(--bg-color);
-    padding-top: 20px;
-    padding-bottom: 20px;
+    background-color: var(--dark-btn);
+    padding-top: 66px;
+    padding-bottom: 40px;
+}
+
+.body-sections p, .body-sections h2, .body-sections h3{
+    color: #ECEEE5;
+}
+
+.body-sections h2{
+    font-family: Tiny5;
+    margin-bottom: 1.625rem;
+    font-style: normal;
+    line-height: 1;
+}
+
+.body-sections h3{
+    margin-bottom: 1.125rem;
+    font-style: normal;
+}
+
+.body-sections p{
+    opacity: 0.9;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 1rem;
 }
 
 .body-sections > section{
     width: 716px;
     /* margin-inline: auto; */
-    margin: 100px auto;
-}
-
-.body-sections > section p{
-    margin-bottom: 10px;
-}
-
-.section-2{
     
+    margin-inline: auto;
+}
+
+.section-2-description, .section-3-lifecycle{
+    margin-bottom: 5.625rem;
+}
+
+
+.section-2-description h3{
+    margin-top: 4.375rem;
+}
+
+.img-fs-wristbone{
+    position: relative;
+    left: -25%;
+    width: 150%;
+    margin-top: 1.5rem;
+    margin-bottom: 2.125rem;
+}
+
+.img-fs-sequence{
+    position: relative;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.gliding-animal-fs-flexbox{
+    display: flex;
+    margin-top: 2.81rem;
+    z-index: 10;
+}
+
+.img-fs-dark{
+    
+    width: 14.75rem;
+    height: fit-content;
+    
+}
+
+.pink-line{
+    width: 5.5rem;
+    position: relative;
+    height: fit-content;
+    margin-top: 3.5rem;
+}
+
+.gliding-animal-flexbox{
+    display: flex;
+    gap: 1.375rem;
+    text-align: center;
+}
+
+.gliding-animal-flexbox > div{
+    width: 7.25rem;
+}
+
+.gliding-animal-flexbox img{
+    width: 100%;
+}
+
+.gliding-animal-flexbox span{
+    color: var(--bg-gray);
+}
+
+.div-do-you-know{
+    width: 100%;
+    display: flex;
+    gap: 1.25rem;
+    align-items: start;
+    background-color: var(--darker-btn);
+    padding: 24px 30px;
+    border-radius: 20px;
+    margin-top: 2.125rem;
+
+}
+
+.div-do-you-know h3{
+    margin: 0;
+    font-size: 1.25rem;
+    color: var(--pink);
+}
+
+.div-do-you-know > div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.div-do-you-know img{
+    width: 35%;
+    height: fit-content;
+    order: -1;
+}
+
+.div-do-you-know p{
+    margin: 0;
+}
+
+
+/* section 3 */
+.diet-container{
+    position: relative;
+    left: -10%;
+    background-color: var(--h1-yellow);
+    width: 120%;
+    height: 24.68rem;
+    margin-inline: auto;
+    border-radius: 5.375rem;
+    margin-top: 2.8rem;
+    
+}
+
+/* section 4 */
+.section-4-evolution{
+    margin-bottom: 0;
+}
+
+.img-evolution-squirrel{
+    width: 60%;
+    margin-top: 1.25rem;
+    margin-bottom: 1.9rem;
 }

@@ -1,0 +1,11 @@
+@media (max-width: 1200px) {
+    :root{
+        font-size: clamp(14px, 1.5vw, 16px);
+    }
+}
+
+@media (max-width: 720px) {
+    :root{
+        font-size: 14px;
+    }
+}
