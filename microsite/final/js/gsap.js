@@ -470,7 +470,7 @@ document.querySelectorAll("a").forEach(a => {
       trigger: ".fact-1",
       start: "top top",
       scrub: 1,
-      markers: true,
+      // markers: true,
     },
   });
   fact2Tl
@@ -524,7 +524,7 @@ document.querySelectorAll("a").forEach(a => {
       trigger: ".fact-2",
       start: "top top",
       scrub: 1,
-      markers: true,
+      // markers: true,
     },
   });
   fact3Tl
