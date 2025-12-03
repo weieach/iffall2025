@@ -101,7 +101,7 @@ gsap.to(".ph-arrow-fat-left", {
 });
 
 gsap.from(".tooltip", {
-  delay: 5,
+  delay: 4,
   opacity: 0,  
   width: 0,
   duration: 1,

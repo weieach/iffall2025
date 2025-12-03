@@ -1,5 +1,9 @@
 /* below mid & above mobile */
 @media (max-width: 900px) {
+
+    body{
+    overflow: auto;
+}
     .inter-only {
     display: none;
   }

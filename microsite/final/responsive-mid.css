@@ -11,9 +11,10 @@
 
   .tooltip {
     display: flex;
+    margin-left: 18%;
   }
 
-  .img-door{
+  .img-door {
     width: 90%;
     max-width: 307px;
   }
@@ -57,7 +58,7 @@
     gap: 1rem;
   }
 
-  .intro-text{
+  .intro-text {
     width: 100%;
     max-width: 390px;
   }
@@ -85,12 +86,11 @@
   }
 
   /* quick facts */
-  .top-right-quickfacts-panel{
+  .top-right-quickfacts-panel {
     padding-left: 5.2%;
     padding-right: 5%;
     padding-bottom: 3rem;
   }
-
 
   /* bottom 3 panels */
 
@@ -165,7 +165,11 @@
 }
 
 @media (max-width: 1100px) {
-    .img-door-sign {
+  .tooltip {
+    display: flex;
+    margin-left: 0%;
+  }
+  .img-door-sign {
     top: 44%;
     left: 22%;
     width: 60%;

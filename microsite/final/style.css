@@ -179,7 +179,7 @@ footer .name{
     margin-left: 36%;
     color: #413F3D;
     border: 1.5px dashed #413F3D;
-    
+    width: fit-content;
     padding: 4px 15px ;
     border-radius: 100px;
 }
