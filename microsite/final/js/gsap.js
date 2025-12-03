@@ -43,8 +43,13 @@ gsap.to(".h1-scroll", {
   ease: "none",
 });
 
+let el = document.querySelector(".h1-col");
+let width = el.offsetWidth;
+let height = el.offsetHeight;
+
 gsap.to(".h1-col .ph-flower", {
-  y: "-1050",
+  y: -5 * width,
+  // y: -0.73 * window.innerWidth,
   duration: 7,
   repeat: -1,
   ease: "none",
@@ -142,8 +147,8 @@ let smoother = ScrollSmoother.create({
 
 // button night: svg morph
 
-let btnNight = document.querySelector(".btn-night");
-let btnNightText = document.querySelector(".btn-night p");
+let btnNight = document.querySelector("#btn-night");
+let btnNightText = document.querySelector("#btn-night p");
 let doorImg = document.querySelector(".img-door");
 
 btnNight.addEventListener("mouseenter", () => {
@@ -513,4 +518,5 @@ document.querySelectorAll("a").forEach(a => {
     );
 });
 
-gsap.globalTimeline.timeScale(3);
+// gsap.globalTimeline.timeScale(3);
+gsap.globalTimeline.timeScale(1.5);

@@ -18,11 +18,14 @@
     href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
 
   <!-- stylesheet -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="responsive.css">
-  <link rel="stylesheet" href="responsive-mid.css">
 
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="design-system.css">
+  <link rel="stylesheet" href="responsive-mid.css">
+  <link rel="stylesheet" href="responsive.css">
+
+
+
   <link rel="icon" href="assets/favicon.png">
 </head>
 
@@ -32,14 +35,14 @@
       <a href="#top-spacer" id="logo-link"><img src="assets/logo.png" id="logo" alt="logo">
         <i class="ph-fill ph-flower logo-flower"></i>
       </a>
-      <div class="tooltip desktop-only">
+      <div class="tooltip desktop-only inter-only">
         <i class="ph-fill ph-info"></i>
-      <p>Click the button below to continue!</p>
+        <p>Click the button below to continue!</p>
       </div>
-      <button type="button">
+      <button type="button" class="mobile-only">
         <i class="ph-bold ph-list"></i>
       </button>
-      <nav class="desktop-only" aria-labelledby="desktop-nav">
+      <nav class="desktop-only inter-only" aria-labelledby="desktop-nav">
         <ul>
           <li><a href="#section-2">Gliding</a></li>
           <li><a href="#section-3">Life Cycle</a></li>
@@ -57,41 +60,41 @@
         <section id="homescreen-mobile" class="mobile-only">
           <div class="homescreen-container">
             <div class="div-textbtnarrow-total">
-                      <p class="text-xl intro-text">
-                        Meet the
-                        <span class="highlight"> flying squirrels</span> —the
-                        little daredevil of the forest!
-                      </p>
-                      
-                      <div class="div-button-arrow">
-                        <button type="button" class="text-lg btn-night" id="btn-night">
-                          <!-- <img
+              <p class="text-xl intro-text">
+                Meet the
+                <span class="highlight"> flying squirrels</span> —the
+                little daredevil of the forest!
+              </p>
+
+              <div class="div-button-arrow">
+                <button type="button" class="text-lg btn-night" id="btn-night-mobile">
+                  <!-- <img
                       src="assets/moon-icon.png"
                       class="moon-icon"
                       alt="moon-icon"> -->
-                          <svg width="34" height="28" class="moon-icon" viewBox="0 0 50 50" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path id="moon-icon"
-                              d="M14.1509 7.07547V0H21.2264V14.1509H28.7736V21.6981H35.3774V28.7736H50V35.8491H42.9245V42.9245H35.3774V50H14.1509V42.9245H7.07547V35.8491H0V14.1509H7.07547V7.07547H14.1509Z"
-                              fill="#96B3E1">
-                          </svg>
-                          <svg width="34" height="28" viewBox="0 0 57 45" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            class="moon-icon-detailed">
-                            <path id="moon-icon-detailed"
-                              d="M33.75 40.8751C33.7503 41.2208 33.655 41.5598 33.4746 41.8547C33.2943 42.1496 33.0359 42.3889 32.7281 42.5462C29.5639 44.1699 26.0565 45.0114 22.5 45.0001C16.5326 45.0001 10.8097 42.6296 6.5901 38.41C2.37053 34.1904 0 28.4675 0 22.5001C0 16.5327 2.37053 10.8098 6.5901 6.59021C10.8097 2.37064 16.5326 0.000111741 22.5 0.000111652C26.0565 -0.0111545 29.5639 0.830328 32.7281 2.45402C33.0359 2.61114 33.2942 2.85024 33.4746 3.14493C33.655 3.43961 33.7505 3.77842 33.7505 4.12394C33.7505 4.46946 33.655 4.80827 33.4746 5.10295C33.2942 5.39764 33.0359 5.63674 32.7281 5.79386C29.6472 7.36375 27.0603 9.75504 25.2536 12.7034C23.4469 15.6517 22.4907 19.0422 22.4907 22.5001C22.4907 25.958 23.4469 29.3485 25.2536 32.2968C27.0603 35.2452 29.6472 37.6365 32.7281 39.2064C33.0356 39.3635 33.2937 39.6024 33.474 39.8969C33.6543 40.1913 33.7498 40.5298 33.75 40.8751ZM55.118 20.7775L48.907 18.0985L48.3656 11.1048C48.3363 10.7326 48.1965 10.3776 47.9642 10.0854C47.7319 9.79312 47.4176 9.57687 47.0616 9.46434C46.7056 9.3518 46.3241 9.3481 45.966 9.45372C45.6079 9.55933 45.2895 9.76944 45.0516 10.0571L40.6945 15.3329L34.2 13.7275C33.8419 13.6393 33.4658 13.6587 33.1187 13.7833C32.7716 13.9078 32.4689 14.1319 32.2485 14.4276C32.0281 14.7233 31.8999 15.0774 31.8797 15.4456C31.8595 15.8138 31.9484 16.1798 32.1352 16.4978L35.6672 22.5001L32.1352 28.5025C31.9484 28.8204 31.8595 29.1864 31.8797 29.5546C31.8999 29.9229 32.0281 30.2769 32.2485 30.5726C32.4689 30.8683 32.7716 31.0924 33.1187 31.217C33.4658 31.3415 33.8419 31.3609 34.2 31.2728L40.6945 29.6673L45.0516 34.9431C45.2895 35.2308 45.6079 35.4409 45.966 35.5465C46.3241 35.6521 46.7056 35.6484 47.0616 35.5359C47.4176 35.4233 47.7319 35.2071 47.9642 34.9148C48.1965 34.6226 48.3363 34.2676 48.3656 33.8954L48.907 26.9017L55.118 24.2228C55.4548 24.078 55.7418 23.8377 55.9435 23.5315C56.1452 23.2253 56.2526 22.8667 56.2526 22.5001C56.2526 22.1335 56.1452 21.7749 55.9435 21.4687C55.7418 21.1625 55.4548 20.9222 55.118 20.7775Z"
-                              fill="#96B3E1">
-                          </svg>
-                          <p>Turn the Night On</p>
-                        </button>
-                        <i class="ph-fill ph-arrow-fat-left"></i>
-                        <i class="ph-bold ph-list"></i>
+                  <svg width="34" height="28" class="moon-icon" viewBox="0 0 50 50" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path id="moon-icon"
+                      d="M14.1509 7.07547V0H21.2264V14.1509H28.7736V21.6981H35.3774V28.7736H50V35.8491H42.9245V42.9245H35.3774V50H14.1509V42.9245H7.07547V35.8491H0V14.1509H7.07547V7.07547H14.1509Z"
+                      fill="#96B3E1">
+                  </svg>
+                  <svg width="34" height="28" viewBox="0 0 57 45" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="moon-icon-detailed">
+                    <path id="moon-icon-detailed"
+                      d="M33.75 40.8751C33.7503 41.2208 33.655 41.5598 33.4746 41.8547C33.2943 42.1496 33.0359 42.3889 32.7281 42.5462C29.5639 44.1699 26.0565 45.0114 22.5 45.0001C16.5326 45.0001 10.8097 42.6296 6.5901 38.41C2.37053 34.1904 0 28.4675 0 22.5001C0 16.5327 2.37053 10.8098 6.5901 6.59021C10.8097 2.37064 16.5326 0.000111741 22.5 0.000111652C26.0565 -0.0111545 29.5639 0.830328 32.7281 2.45402C33.0359 2.61114 33.2942 2.85024 33.4746 3.14493C33.655 3.43961 33.7505 3.77842 33.7505 4.12394C33.7505 4.46946 33.655 4.80827 33.4746 5.10295C33.2942 5.39764 33.0359 5.63674 32.7281 5.79386C29.6472 7.36375 27.0603 9.75504 25.2536 12.7034C23.4469 15.6517 22.4907 19.0422 22.4907 22.5001C22.4907 25.958 23.4469 29.3485 25.2536 32.2968C27.0603 35.2452 29.6472 37.6365 32.7281 39.2064C33.0356 39.3635 33.2937 39.6024 33.474 39.8969C33.6543 40.1913 33.7498 40.5298 33.75 40.8751ZM55.118 20.7775L48.907 18.0985L48.3656 11.1048C48.3363 10.7326 48.1965 10.3776 47.9642 10.0854C47.7319 9.79312 47.4176 9.57687 47.0616 9.46434C46.7056 9.3518 46.3241 9.3481 45.966 9.45372C45.6079 9.55933 45.2895 9.76944 45.0516 10.0571L40.6945 15.3329L34.2 13.7275C33.8419 13.6393 33.4658 13.6587 33.1187 13.7833C32.7716 13.9078 32.4689 14.1319 32.2485 14.4276C32.0281 14.7233 31.8999 15.0774 31.8797 15.4456C31.8595 15.8138 31.9484 16.1798 32.1352 16.4978L35.6672 22.5001L32.1352 28.5025C31.9484 28.8204 31.8595 29.1864 31.8797 29.5546C31.8999 29.9229 32.0281 30.2769 32.2485 30.5726C32.4689 30.8683 32.7716 31.0924 33.1187 31.217C33.4658 31.3415 33.8419 31.3609 34.2 31.2728L40.6945 29.6673L45.0516 34.9431C45.2895 35.2308 45.6079 35.4409 45.966 35.5465C46.3241 35.6521 46.7056 35.6484 47.0616 35.5359C47.4176 35.4233 47.7319 35.2071 47.9642 34.9148C48.1965 34.6226 48.3363 34.2676 48.3656 33.8954L48.907 26.9017L55.118 24.2228C55.4548 24.078 55.7418 23.8377 55.9435 23.5315C56.1452 23.2253 56.2526 22.8667 56.2526 22.5001C56.2526 22.1335 56.1452 21.7749 55.9435 21.4687C55.7418 21.1625 55.4548 20.9222 55.118 20.7775Z"
+                      fill="#96B3E1">
+                  </svg>
+                  <p>Turn the Night On</p>
+                </button>
+                <i class="ph-fill ph-arrow-fat-left"></i>
+                <i class="ph-bold ph-list"></i>
 
 
-                      </div>
-                    </div>
+              </div>
+            </div>
           </div>
         </section>
-        <section id="homescreen" class="desktop-only">
+        <section id="homescreen" class="desktop-only inter-only">
           <div class="flexbox-homescreen">
             <div class="h1-col">
               <h1>Flying Squirrel</h1>
@@ -139,41 +142,66 @@
                     <img src="assets/forest-dark.png" class="forest-img img-forest-dark" alt="forest-dark">
                   </div>
                   <div class="div-portrait-caption-button">
-                    <div class="div-fs-portrait">
-                      <!-- <img
-                  src="assets/fs-portrait.png"
-                  alt="flying-squirrel-portrait"> -->
-                      <img src="assets/fs-mask.png" class="img-fs-mask" alt="mask">
-                    </div>
                     <div>
-                      <p class="text-xl intro-text">
-                        Meet the
-                        <span class="highlight"> flying squirrels</span> —the
-                        little daredevil of the forest!
-                      </p>
-                      <div class="div-button-arrow">
-                        <button type="button" class="text-lg btn-night" id="btn-night">
-                          <!-- <img
+                      <div class="div-fs-portrait desktop-only">
+                        <img src="assets/fs-mask.png" class="img-fs-mask" alt="mask">
+                      </div>
+                      <div id="div-inter-fsportrait-introtext">
+                        <div class="div-fs-portrait inter-only">
+                          <img src="assets/fs-mask.png" class="img-fs-mask" alt="mask">
+                        </div>
+                        <p class="intro-text">
+                          Meet the
+                          <span class="highlight"> flying squirrels</span> —the
+                          little daredevil of the forest!
+                        </p>
+                        <div class="div-button-arrow desktop-only" id="div-button-arrow-desktop">
+                          <button type="button" class="text-lg btn-night" id="btn-night">
+                            <!-- <img
                       src="assets/moon-icon.png"
                       class="moon-icon"
                       alt="moon-icon"> -->
-                          <svg width="34" height="28" class="moon-icon" viewBox="0 0 50 50" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path id="moon-icon"
-                              d="M14.1509 7.07547V0H21.2264V14.1509H28.7736V21.6981H35.3774V28.7736H50V35.8491H42.9245V42.9245H35.3774V50H14.1509V42.9245H7.07547V35.8491H0V14.1509H7.07547V7.07547H14.1509Z"
-                              fill="#96B3E1">
-                          </svg>
-                          <svg width="34" height="28" viewBox="0 0 57 45" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            class="moon-icon-detailed">
-                            <path id="moon-icon-detailed"
-                              d="M33.75 40.8751C33.7503 41.2208 33.655 41.5598 33.4746 41.8547C33.2943 42.1496 33.0359 42.3889 32.7281 42.5462C29.5639 44.1699 26.0565 45.0114 22.5 45.0001C16.5326 45.0001 10.8097 42.6296 6.5901 38.41C2.37053 34.1904 0 28.4675 0 22.5001C0 16.5327 2.37053 10.8098 6.5901 6.59021C10.8097 2.37064 16.5326 0.000111741 22.5 0.000111652C26.0565 -0.0111545 29.5639 0.830328 32.7281 2.45402C33.0359 2.61114 33.2942 2.85024 33.4746 3.14493C33.655 3.43961 33.7505 3.77842 33.7505 4.12394C33.7505 4.46946 33.655 4.80827 33.4746 5.10295C33.2942 5.39764 33.0359 5.63674 32.7281 5.79386C29.6472 7.36375 27.0603 9.75504 25.2536 12.7034C23.4469 15.6517 22.4907 19.0422 22.4907 22.5001C22.4907 25.958 23.4469 29.3485 25.2536 32.2968C27.0603 35.2452 29.6472 37.6365 32.7281 39.2064C33.0356 39.3635 33.2937 39.6024 33.474 39.8969C33.6543 40.1913 33.7498 40.5298 33.75 40.8751ZM55.118 20.7775L48.907 18.0985L48.3656 11.1048C48.3363 10.7326 48.1965 10.3776 47.9642 10.0854C47.7319 9.79312 47.4176 9.57687 47.0616 9.46434C46.7056 9.3518 46.3241 9.3481 45.966 9.45372C45.6079 9.55933 45.2895 9.76944 45.0516 10.0571L40.6945 15.3329L34.2 13.7275C33.8419 13.6393 33.4658 13.6587 33.1187 13.7833C32.7716 13.9078 32.4689 14.1319 32.2485 14.4276C32.0281 14.7233 31.8999 15.0774 31.8797 15.4456C31.8595 15.8138 31.9484 16.1798 32.1352 16.4978L35.6672 22.5001L32.1352 28.5025C31.9484 28.8204 31.8595 29.1864 31.8797 29.5546C31.8999 29.9229 32.0281 30.2769 32.2485 30.5726C32.4689 30.8683 32.7716 31.0924 33.1187 31.217C33.4658 31.3415 33.8419 31.3609 34.2 31.2728L40.6945 29.6673L45.0516 34.9431C45.2895 35.2308 45.6079 35.4409 45.966 35.5465C46.3241 35.6521 46.7056 35.6484 47.0616 35.5359C47.4176 35.4233 47.7319 35.2071 47.9642 34.9148C48.1965 34.6226 48.3363 34.2676 48.3656 33.8954L48.907 26.9017L55.118 24.2228C55.4548 24.078 55.7418 23.8377 55.9435 23.5315C56.1452 23.2253 56.2526 22.8667 56.2526 22.5001C56.2526 22.1335 56.1452 21.7749 55.9435 21.4687C55.7418 21.1625 55.4548 20.9222 55.118 20.7775Z"
-                              fill="#96B3E1">
-                          </svg>
-                          <p>Turn the Night On</p>
-                        </button>
-                        <i class="ph-fill ph-arrow-fat-left"></i>
+                            <svg width="34" height="28" class="moon-icon" viewBox="0 0 50 50" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path id="moon-icon"
+                                d="M14.1509 7.07547V0H21.2264V14.1509H28.7736V21.6981H35.3774V28.7736H50V35.8491H42.9245V42.9245H35.3774V50H14.1509V42.9245H7.07547V35.8491H0V14.1509H7.07547V7.07547H14.1509Z"
+                                fill="#96B3E1">
+                            </svg>
+                            <svg width="34" height="28" viewBox="0 0 57 45" fill="none"
+                              xmlns="http://www.w3.org/2000/svg" class="moon-icon-detailed">
+                              <path id="moon-icon-detailed"
+                                d="M33.75 40.8751C33.7503 41.2208 33.655 41.5598 33.4746 41.8547C33.2943 42.1496 33.0359 42.3889 32.7281 42.5462C29.5639 44.1699 26.0565 45.0114 22.5 45.0001C16.5326 45.0001 10.8097 42.6296 6.5901 38.41C2.37053 34.1904 0 28.4675 0 22.5001C0 16.5327 2.37053 10.8098 6.5901 6.59021C10.8097 2.37064 16.5326 0.000111741 22.5 0.000111652C26.0565 -0.0111545 29.5639 0.830328 32.7281 2.45402C33.0359 2.61114 33.2942 2.85024 33.4746 3.14493C33.655 3.43961 33.7505 3.77842 33.7505 4.12394C33.7505 4.46946 33.655 4.80827 33.4746 5.10295C33.2942 5.39764 33.0359 5.63674 32.7281 5.79386C29.6472 7.36375 27.0603 9.75504 25.2536 12.7034C23.4469 15.6517 22.4907 19.0422 22.4907 22.5001C22.4907 25.958 23.4469 29.3485 25.2536 32.2968C27.0603 35.2452 29.6472 37.6365 32.7281 39.2064C33.0356 39.3635 33.2937 39.6024 33.474 39.8969C33.6543 40.1913 33.7498 40.5298 33.75 40.8751ZM55.118 20.7775L48.907 18.0985L48.3656 11.1048C48.3363 10.7326 48.1965 10.3776 47.9642 10.0854C47.7319 9.79312 47.4176 9.57687 47.0616 9.46434C46.7056 9.3518 46.3241 9.3481 45.966 9.45372C45.6079 9.55933 45.2895 9.76944 45.0516 10.0571L40.6945 15.3329L34.2 13.7275C33.8419 13.6393 33.4658 13.6587 33.1187 13.7833C32.7716 13.9078 32.4689 14.1319 32.2485 14.4276C32.0281 14.7233 31.8999 15.0774 31.8797 15.4456C31.8595 15.8138 31.9484 16.1798 32.1352 16.4978L35.6672 22.5001L32.1352 28.5025C31.9484 28.8204 31.8595 29.1864 31.8797 29.5546C31.8999 29.9229 32.0281 30.2769 32.2485 30.5726C32.4689 30.8683 32.7716 31.0924 33.1187 31.217C33.4658 31.3415 33.8419 31.3609 34.2 31.2728L40.6945 29.6673L45.0516 34.9431C45.2895 35.2308 45.6079 35.4409 45.966 35.5465C46.3241 35.6521 46.7056 35.6484 47.0616 35.5359C47.4176 35.4233 47.7319 35.2071 47.9642 34.9148C48.1965 34.6226 48.3363 34.2676 48.3656 33.8954L48.907 26.9017L55.118 24.2228C55.4548 24.078 55.7418 23.8377 55.9435 23.5315C56.1452 23.2253 56.2526 22.8667 56.2526 22.5001C56.2526 22.1335 56.1452 21.7749 55.9435 21.4687C55.7418 21.1625 55.4548 20.9222 55.118 20.7775Z"
+                                fill="#96B3E1">
+                            </svg>
+                            <p>Turn the Night On</p>
+                          </button>
+                          <i class="ph-fill ph-arrow-fat-left"></i>
+                        </div>
                       </div>
                     </div>
+                    <div class="div-button-arrow inter-only" id="div-button-arrow-inter">
+                      <button type="button" class="text-lg btn-night" id="btn-night">
+                        <!-- <img
+                      src="assets/moon-icon.png"
+                      class="moon-icon"
+                      alt="moon-icon"> -->
+                        <svg width="34" height="28" class="moon-icon" viewBox="0 0 50 50" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path id="moon-icon"
+                            d="M14.1509 7.07547V0H21.2264V14.1509H28.7736V21.6981H35.3774V28.7736H50V35.8491H42.9245V42.9245H35.3774V50H14.1509V42.9245H7.07547V35.8491H0V14.1509H7.07547V7.07547H14.1509Z"
+                            fill="#96B3E1">
+                        </svg>
+                        <svg width="34" height="28" viewBox="0 0 57 45" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          class="moon-icon-detailed">
+                          <path id="moon-icon-detailed"
+                            d="M33.75 40.8751C33.7503 41.2208 33.655 41.5598 33.4746 41.8547C33.2943 42.1496 33.0359 42.3889 32.7281 42.5462C29.5639 44.1699 26.0565 45.0114 22.5 45.0001C16.5326 45.0001 10.8097 42.6296 6.5901 38.41C2.37053 34.1904 0 28.4675 0 22.5001C0 16.5327 2.37053 10.8098 6.5901 6.59021C10.8097 2.37064 16.5326 0.000111741 22.5 0.000111652C26.0565 -0.0111545 29.5639 0.830328 32.7281 2.45402C33.0359 2.61114 33.2942 2.85024 33.4746 3.14493C33.655 3.43961 33.7505 3.77842 33.7505 4.12394C33.7505 4.46946 33.655 4.80827 33.4746 5.10295C33.2942 5.39764 33.0359 5.63674 32.7281 5.79386C29.6472 7.36375 27.0603 9.75504 25.2536 12.7034C23.4469 15.6517 22.4907 19.0422 22.4907 22.5001C22.4907 25.958 23.4469 29.3485 25.2536 32.2968C27.0603 35.2452 29.6472 37.6365 32.7281 39.2064C33.0356 39.3635 33.2937 39.6024 33.474 39.8969C33.6543 40.1913 33.7498 40.5298 33.75 40.8751ZM55.118 20.7775L48.907 18.0985L48.3656 11.1048C48.3363 10.7326 48.1965 10.3776 47.9642 10.0854C47.7319 9.79312 47.4176 9.57687 47.0616 9.46434C46.7056 9.3518 46.3241 9.3481 45.966 9.45372C45.6079 9.55933 45.2895 9.76944 45.0516 10.0571L40.6945 15.3329L34.2 13.7275C33.8419 13.6393 33.4658 13.6587 33.1187 13.7833C32.7716 13.9078 32.4689 14.1319 32.2485 14.4276C32.0281 14.7233 31.8999 15.0774 31.8797 15.4456C31.8595 15.8138 31.9484 16.1798 32.1352 16.4978L35.6672 22.5001L32.1352 28.5025C31.9484 28.8204 31.8595 29.1864 31.8797 29.5546C31.8999 29.9229 32.0281 30.2769 32.2485 30.5726C32.4689 30.8683 32.7716 31.0924 33.1187 31.217C33.4658 31.3415 33.8419 31.3609 34.2 31.2728L40.6945 29.6673L45.0516 34.9431C45.2895 35.2308 45.6079 35.4409 45.966 35.5465C46.3241 35.6521 46.7056 35.6484 47.0616 35.5359C47.4176 35.4233 47.7319 35.2071 47.9642 34.9148C48.1965 34.6226 48.3363 34.2676 48.3656 33.8954L48.907 26.9017L55.118 24.2228C55.4548 24.078 55.7418 23.8377 55.9435 23.5315C56.1452 23.2253 56.2526 22.8667 56.2526 22.5001C56.2526 22.1335 56.1452 21.7749 55.9435 21.4687C55.7418 21.1625 55.4548 20.9222 55.118 20.7775Z"
+                            fill="#96B3E1">
+                        </svg>
+                        <p>Turn the Night On</p>
+                      </button>
+                      <i class="ph-fill ph-arrow-fat-left"></i>
+                    </div>
+
                   </div>
                   <div class="human-quote">
                     <p class="quote-text">
@@ -187,7 +215,7 @@
                         <i class="ph-fill ph-heart"></i>
                         <i class="ph-fill ph-heart"></i>
                       </div>
-                      <p>–Human Beings</p>
+                      <p class="human-being">—Human Beings</p>
                     </div>
                   </div>
                 </div>
@@ -278,7 +306,7 @@
             <h2>Gliding</h2>
             <p>
               Flying squirrels (scientifically known as Pteromyini or Petauristini) are a tribe of
-              50 species of squirrels in the family Sciuridae. Despite their
+              50 species of <br>squirrels in the family Sciuridae. Despite their
               name, flying squirrels are not capable of flight
               like birds or bats; instead, they glide between trees. They are
               capable of obtaining lift within the course of these flights, with
@@ -320,26 +348,26 @@
               <div class="gliding-animal-fs-flexbox">
                 <img src="assets/fs-in-dark.png" class="img-fs-dark" alt="fs-in-dark">
                 <div class="pink-lines">
-                <img src="assets/Line 4.png" class="pink-line desktop-only" alt="pink-line">
-                <img src="assets/Line 5.png" class="pink-line mobile-only" alt="pink-line">
-                <img src="assets/Line 5.png" class="pink-line mobile-only" alt="pink-line">
-                <img src="assets/Line 5.png" class="pink-line mobile-only" alt="pink-line">
+                  <img src="assets/Line 4.png" class="pink-line desktop-only" alt="pink-line">
+                  <img src="assets/Line 5.png" class="pink-line mobile-only" alt="pink-line">
+                  <img src="assets/Line 5.png" class="pink-line mobile-only" alt="pink-line">
+                  <img src="assets/Line 5.png" class="pink-line mobile-only" alt="pink-line">
                 </div>
-              <div class="gliding-animal-flexbox">
-                <div>
-                  <img src="assets/Malayan-colugo-Galeopterus-variegatus 1.png" alt="flying-lemur">
-                  <p>Colugos <br><span>(Flying Lemur)</span></p>
-                </div>
+                <div class="gliding-animal-flexbox">
+                  <div>
+                    <img src="assets/Malayan-colugo-Galeopterus-variegatus 1.png" alt="flying-lemur">
+                    <p>Colugos <br><span>(Flying Lemur)</span></p>
+                  </div>
 
-                <div>
-                  <img src="assets/sugar-glider-petaurus-breviceps-440nw-3718631a 1.png" alt="springhare">
-                  <p>Petauridae <br><span>(Springhare)</span></p>
+                  <div>
+                    <img src="assets/sugar-glider-petaurus-breviceps-440nw-3718631a 1.png" alt="springhare">
+                    <p>Petauridae <br><span>(Springhare)</span></p>
+                  </div>
+                  <div>
+                    <img src="assets/scary-tailed.png" alt="scary-tailed-squirrel">
+                    <p>Anomaluridae <br><span>(Scary-tailed squirrel)</span></p>
+                  </div>
                 </div>
-                <div>
-                  <img src="assets/scary-tailed.png" alt="scary-tailed-squirrel">
-                  <p>Anomaluridae <br><span>(Scary-tailed squirrel)</span></p>
-                </div>
-              </div>
               </div>
               <div class="div-do-you-know">
                 <div>
@@ -365,16 +393,15 @@
             <h2 class="script-title title-lifecycle">Life Cycle</h2>
             <div class="body-type">
               <p>
-                The life expectancy of flying squirrels in the wild is about six
-                years, and flying squirrels can live up to fifteen years in
-                zoos. The mortality rate in young flying squirrels is high
-                because of predators and diseases. Predators of flying squirrels
-                include tree
-                snakes, raccoons, owls, martens, fishers, coyotes, bobcats,
-                and feral cats. In the Pacific Northwest of North America,
-                the northern spotted owl (Strix occidentalis) is a common
-                predator of flying squirrels.
+
+                The life expectancy of flying squirrels in the wild is about six years, and flying squirrels can live up
+                to fifteen years in zoos. The mortality rate in young flying squirrels is high because of predators and
+                diseases. Predators of flying squirrels include tree snakes, raccoons, owls, martens, fishers, coyotes,
+                bobcats, and feral cats. In the Pacific Northwest of North America, the northern spotted owl (Strix
+                occidentalis) is a common predator of flying squirrels.
               </p>
+
+
               <h3>Diet</h3>
               <p>
                 Flying squirrels can easily forage for food in the night, given
@@ -471,18 +498,19 @@
       </main>
       <footer>
         <div class="footer-flexbox">
-        <div>
-          <p>Designer</p>
-          <p class="name">Nicole Wei</p>
-        </div>
-        <div>
-          <p>Creative Director</p>
-          <p class="name">Emma Hinckley</p>
-        </div>
-        <div>
-          <p>Sources</p>
-          <p class="name"><a href="https://en.wikipedia.org/wiki/Flying_squirrel" target="_blank">Wikipedia</a>, Adobe Stock</p>
-        </div>
+          <div>
+            <p>Designer</p>
+            <p class="name">Nicole Wei</p>
+          </div>
+          <div>
+            <p>Creative Director</p>
+            <p class="name">Emma Hinckley</p>
+          </div>
+          <div>
+            <p>Sources</p>
+            <p class="name"><a href="https://en.wikipedia.org/wiki/Flying_squirrel" target="_blank">Wikipedia</a>, Adobe
+              Stock</p>
+          </div>
         </div>
       </footer>
 

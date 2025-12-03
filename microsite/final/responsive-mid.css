@@ -1,11 +1,239 @@
+/* for grid adjustment */
+@media (max-width: 1300px) {
+  .desktop-only,
+  .mobile-only {
+    display: none;
+  }
+
+  .inter-only {
+    display: block;
+  }
+
+  .tooltip {
+    display: flex;
+  }
+
+  .img-door{
+    width: 90%;
+    max-width: 307px;
+  }
+
+  .img-door-sign {
+    top: 33%;
+    left: 24%;
+    width: 55%;
+    max-width: 200px;
+  }
+
+  .letter-z {
+    top: 43%;
+  }
+
+  .z-small {
+    width: 1rem;
+    left: 40%;
+  }
+
+  .z-mid {
+    width: 1.25rem;
+  }
+
+  .z-big {
+    width: 1.5rem;
+    left: 53%;
+  }
+
+  .top-right-panel {
+    padding-left: 5.2%;
+    padding-right: 5%;
+  }
+
+  .forest-panel {
+    max-width: 637px;
+  }
+
+  .top-right-panel {
+    justify-content: start;
+    gap: 1rem;
+  }
+
+  #div-inter-fsportrait-introtext {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .div-fs-portrait.inter-only {
+    border-radius: 20%;
+    /* width: 270px; */
+    aspect-ratio: 180/207;
+    max-width: 166px;
+    display: none;
+  }
+
+  .div-fs-portrait.desktop-only {
+    display: block;
+    min-width: 170px;
+  }
+
+  .div-button-arrow.desktop-only {
+    display: flex;
+  }
+
+  /* quick facts */
+  .top-right-quickfacts-panel{
+    padding-left: 5.2%;
+    padding-right: 5%;
+    padding-bottom: 3rem;
+  }
+
+
+  /* bottom 3 panels */
+
+  .plane-path,
+  .mask {
+    left: clamp(3%, 2vw, 13%);
+  }
+  .img-plane {
+    width: 40%;
+    max-width: 160px;
+    top: 10%;
+  }
+
+  .img-ruler {
+    bottom: -45%;
+  }
+
+  /*panel: food  */
+  .img-plate {
+    width: 95%;
+    left: 2.5%;
+    top: 45%;
+    max-width: 276px;
+  }
+
+  .food-item {
+    width: 30%;
+    max-width: 82px;
+  }
+
+  .img-acorn {
+    left: 13%;
+  }
+
+  .img-pine-nut {
+    left: 37%;
+    bottom: 40%;
+  }
+
+  .img-seed {
+    bottom: 40%;
+    right: 12%;
+    width: 34%;
+  }
+
+  /* quote */
+  .human-quote {
+    flex-direction: column;
+    gap: 0;
+    align-items: start;
+  }
+  .human-quote > div {
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    padding-left: 2rem;
+  }
+  .quote-text {
+    margin-left: 0rem;
+    height: 5.5rem;
+    align-self: start;
+  }
+  .human-being {
+    order: -1;
+  }
+}
+
 @media (max-width: 1200px) {
-    :root{
-        font-size: clamp(14px, 1.5vw, 16px);
-    }
+  :root {
+    font-size: clamp(14px, 1.5vw, 16px);
+  }
+}
+
+@media (max-width: 1100px) {
+    .img-door-sign {
+    top: 44%;
+    left: 22%;
+    width: 60%;
+  }
+  .letter-z {
+    top: 52%;
+  }
+
+  .z-small {
+    width: 0.9rem;
+    left: 40%;
+  }
+
+  .z-mid {
+    width: 1.1rem;
+  }
+
+  .z-big {
+    width: 1.25rem;
+    left: 53%;
+  }
+
+  .top-right-panel {
+    justify-content: space-between;
+    /* gap: 2rem; */
+    padding-bottom: 2rem;
+    padding-right: 3%;
+  }
+  #div-inter-fsportrait-introtext {
+    display: flex;
+    flex-direction: row;
+    gap: 1.4rem;
+  }
+
+  .div-portrait-caption-button {
+    flex-direction: column;
+    gap: 14px;
+    width: 90%;
+  }
+
+  .div-fs-portrait {
+    width: 38%;
+    max-width: 150px;
+  }
+
+  .div-fs-portrait.desktop-only {
+    display: block;
+    min-width: 150px;
+  }
+
+  .div-portrait-caption-button > div.desktop-only {
+    display: none;
+  }
+
+  .div-button-arrow.desktop-only {
+    display: none;
+    position: absolute;
+  }
+
+  #div-button-arrow-inter {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 900px) {
+  #homescreen {
+    display: none;
+  }
 }
 
 @media (max-width: 720px) {
-    :root{
-        font-size: 14px;
-    }
+  :root {
+    font-size: 14px;
+  }
 }
