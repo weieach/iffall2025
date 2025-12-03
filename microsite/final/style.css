@@ -940,7 +940,8 @@ button p{
 }
 
 .inner-food-wrapper{
-    height: 27rem;
+    height: 28rem;
+    filter: saturate(50%);
 }
 
 .dropped-food{

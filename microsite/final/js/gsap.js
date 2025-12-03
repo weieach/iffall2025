@@ -725,7 +725,7 @@ document.getElementById("logo-link").addEventListener("click", (e) => {
 
 gsap.set(".dropped-food", {
   top: () => `${gsap.utils.random(-5, 50)}%`,
-  left: () => `${gsap.utils.random(0, 90)}%`,
+  left: () => `${gsap.utils.random(0, 95)}%`,
   rotation: () => gsap.utils.random(-40, 20),
   scale: () => gsap.utils.random(0.5, 2),
 });
