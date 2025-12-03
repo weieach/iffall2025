@@ -7,7 +7,8 @@ gsap.registerPlugin(
   Flip,
   MotionPathPlugin,
   MorphSVGPlugin,
-  DrawSVGPlugin
+  DrawSVGPlugin, 
+  Physics2DPlugin
 );
 
 //disable nav anchors upon entry
@@ -628,6 +629,23 @@ navLinksMobile.forEach(link => {
   });
 });
 
+let navAnchorsMobile = document.querySelectorAll("nav a");
+
+navAnchorsMobile.forEach(anchor => {
+  anchor.addEventListener("mouseenter", () => {
+    gsap.to(anchor, {
+      opacity: 0.6,
+      duration: 0.5,
+    });
+  });
+
+  anchor.addEventListener("mouseleave", () => {
+    gsap.to(anchor, {
+      opacity: 1,
+      duration: 0.5,
+    });
+  });
+});
 
 //click on logo -> reload
 document.getElementById("logo-link").addEventListener("click", (e) => {
@@ -642,10 +660,72 @@ document.getElementById("logo-link").addEventListener("click", (e) => {
   }, 50);
 });
 
+// // food drop
+// const foodImages = [
+//   "assets/foods/1.png",
+//   "assets/foods/2.png",
+//   "assets/foods/3.png",
+//   "assets/foods/4.png",
+//   "assets/foods/5.png",
+// ];
+
+// const container = document.getElementById("food-drop-area");
+
+// function createFoodElement(src) {
+//   const img = document.createElement("img");
+//   img.src = src;
+//   img.classList.add("food-item");
+//   container.appendChild(img);
+//   return img;
+// }
+
+// function initFoodParallax(count = 12) {
+//   const areaRect = container.getBoundingClientRect();
+
+//   for (let i = 0; i < count; i++) {
+//     const src  = gsap.utils.random(foodImages);
+//     const food = createFoodElement(src);
+
+//     const baseX = gsap.utils.random(0, areaRect.width - 80);
+//     const baseY = gsap.utils.random(0, areaRect.height - 80);
+
+//     const baseRot = gsap.utils.random(-15, 15);
+//     const depth   = gsap.utils.random(0.3, 1.3); 
+
+//     gsap.set(food, {
+//       x: baseX,
+//       y: baseY,
+//       rotation: baseRot,
+//       opacity: 1,
+//     });
+
+//     // subtle parallax drift on scroll
+//     gsap.to(food, {
+//       x: baseX + gsap.utils.random(-40, 40) * depth,
+//       y: baseY + gsap.utils.random(-60, 60) * depth,
+//       ease: "none",
+//       scrollTrigger: {
+//         trigger: ".food-drop-trigger",   // or container
+//         start: "top bottom",
+//         end: "bottom top",
+//         scrub: true,
+//       },
+//     });
+//   }
+// }
+
+// // you can run this immediately, or when the section comes into view:
+// ScrollTrigger.create({
+//   trigger: ".food-drop-trigger",
+//   start: "top bottom",
+//   once: true,
+//   onEnter: () => initFoodParallax(14),
+// });
 
 
 
-// gsap.globalTimeline.timeScale(3);
-gsap.globalTimeline.timeScale(1.5);
+
+gsap.globalTimeline.timeScale(3);
+// gsap.globalTimeline.timeScale(1.5);
 
 

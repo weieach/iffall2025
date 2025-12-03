@@ -927,7 +927,7 @@ button p{
 
 
 /* section 3 */
-.diet-container{
+.food-drop-area{
     position: relative;
     left: -10%;
     background-color: var(--h1-yellow);
@@ -936,7 +936,19 @@ button p{
     margin-inline: auto;
     border-radius: 5.375rem;
     margin-top: 2.8rem;
-    
+    overflow: hidden;
+}
+
+.dropped-food{
+    height: 60px;
+    position: absolute;
+}
+
+.food-item {
+  position: absolute;
+  width: 60px; 
+  height: auto;
+  pointer-events: none;
 }
 
 /* section 4 */
