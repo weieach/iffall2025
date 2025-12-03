@@ -1,24 +1,26 @@
-/* mobile */
-@media (max-width: 500px) {
-  :root {
-    font-size: 12px;
-  }
-
-  p {
-    font-size: 1.1rem;
-  }
-
-  .inter-only{
+/* below mid & above mobile */
+@media (max-width: 900px) {
+    .inter-only {
     display: none;
   }
 
-  .mobile-only{
+  .mobile-only {
     display: block;
   }
 
-  .desktop-only{
+  .desktop-only {
     display: none;
   }
+
+  nav.desktop-only{
+    display: flex;
+  }
+
+  .btn-sidebar{
+    display: none;
+  }
+
+  /* footer */
 
   footer {
     padding-inline: 0px;
@@ -37,21 +39,109 @@
     gap: 10px;
     align-items: center;
   }
-  
-  .ph-list{
+
+  .ph-list {
     font-size: 2rem;
   }
 
   /* homescreen */
-  #homescreen-mobile{
+  #homescreen-mobile {
     height: 100vh;
     width: 100%;
     background-color: var(--bg-color);
+    position: relative;
+    
   }
 
-  .homescreen-container{
-    width: 85%;
+  .homescreen-container {
+    width: fit-content;
+    height: 100%;
     margin-inline: auto;
+    display: flex;
+    padding-bottom: 50px;
+    position: relative;
+    flex-direction: column;
+    justify-content: end;
+    gap: 1rem;
+  }
+
+  .div-textbtnarrow-total {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    
+  }
+
+  .intro-text{
+    font-size: 2.9rem;
+    width: 100%;
+    text-align: left;
+  }
+
+  .intro-text span{
+    font-size: 3.3rem;
+  }
+
+  .div-button-arrow{
+    width: 100%;
+  }
+
+  #btn-night-mobile{
+    justify-content: center;
+    width: 100%;
+    color: var(--bg-color);
+    text-decoration: none;
+  }
+
+  #btn-night-mobile p{
+    color: var(--bg-color);
+    font-weight: 700;
+  }
+
+  .btn-night p{
+    font-size: 1.7rem;
+  }
+
+  .div-fs-portrait{
+    position: absolute;
+  }
+
+  /* homescreen visuals */
+  #div-fs-portrait{
+    position: absolute;
+    width: 40%;
+    min-width: 140px;
+    top: 9%;
+    right: -18% ;
+    z-index: 100;
+  }
+
+  .panel-time{
+    /* position: absolute; */
+    aspect-ratio: 425/150;
+    width: 440px;
+    max-height: 150px;
+    /* bottom: 340px; */
+  }
+
+  .sun-icon{
+    position: absolute;
+    bottom: 50px;
+  }
+
+  .forest-img{
+    position: absolute;
+    aspect-ratio: 505/208;
+    width: 140vw;
+    max-width: 680px;
+    bottom: 52%;
+    right: 10%;
+  }
+
+  .ph-arrow-fat-left{
+    display: block;
+    font-size: 2.2rem;
   }
 
   /* body section */
@@ -68,7 +158,6 @@
     font-size: 5rem;
   }
 
-
   .gliding-animal-fs-flexbox {
     flex-direction: column;
   }
@@ -78,11 +167,11 @@
     width: 210%;
   }
 
-  .img-fs-sequence{
+  .img-fs-sequence {
     width: 130%;
     left: -15%;
     border-radius: 0;
-    background-color: #1E1E1E;
+    background-color: #1e1e1e;
     padding: 20px 0px;
   }
 
@@ -94,13 +183,13 @@
     justify-content: space-between;
   }
 
-  .pink-lines{
+  .pink-lines {
     display: flex;
     gap: 40%;
     padding-left: 14%;
   }
 
-  .pink-line.mobile-only{
+  .pink-line.mobile-only {
     width: 2px;
     margin: 0;
   }
@@ -126,13 +215,92 @@
     order: 2;
   }
 
-  .diet-container{
+  .diet-container {
     left: -5%;
     width: 110%;
     border-radius: 4rem;
   }
 
-  .img-evolution-squirrel{
+  .img-evolution-squirrel {
     width: 100%;
+  }
+}
+
+
+
+
+
+
+
+/* mobile */
+@media (max-width: 500px) {
+  :root {
+    font-size: 12px;
+  }
+  
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .inter-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  nav.desktop-only{
+    display: none;
+  }
+
+  .homescreen-container {
+    width: 85%;
+    padding-bottom: 100px;
+  }
+
+  .intro-text{
+    font-size: 2.7rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .intro-text span{
+    font-size: 3.1rem;
+  }
+
+  .ph-arrow-fat-left{
+    display: none;
+  }
+
+  .forest-img{
+    bottom: 480px;
+  }
+
+  /* homescreen visuals */
+  #div-fs-portrait{
+    position: absolute;
+    width: 20%;
+    max-width: 140px;
+    top: 16%;
+    right: -5% ;
+    z-index: 100;
+  }
+
+  .panel-time{
+    width: 100%;
+    max-height: 150px;
+  }
+}
+
+/* smallest */
+@media (max-width: 397px) {
+    .forest-img{
+    bottom: 520px;
   }
 }

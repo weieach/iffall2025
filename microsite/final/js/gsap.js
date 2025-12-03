@@ -1,3 +1,5 @@
+
+
 gsap.registerPlugin(
   ScrollTrigger,
   ScrollSmoother,
@@ -58,6 +60,13 @@ gsap.to(".h1-col .ph-flower", {
 
 gsap.to(".img-sky-texture", {
   x: "-350",
+  duration: 8,
+  repeat: -1,
+  ease: "none",
+});
+
+gsap.to("#homescreen-mobile .img-sky-texture", {
+  x: "-170",
   duration: 8,
   repeat: -1,
   ease: "none",
@@ -143,6 +152,7 @@ let smoother = ScrollSmoother.create({
   wrapper: "#smooth-wrapper",
   content: "#smooth-content",
   smooth: 2,
+  effects: true,
 });
 
 // button night: svg morph
@@ -191,6 +201,9 @@ document.querySelectorAll("a").forEach(a => {
   btnNight.setAttribute("disabled", "disabled");
   btnNightText.textContent = "Say hi to our squirrel!";
   turnsNightTl
+    .to(".tooltip", {
+      opacity: 0,
+    })
     .to(".ph-arrow-fat-left", {
       opacity: 0,
     })
@@ -283,7 +296,7 @@ document.querySelectorAll("a").forEach(a => {
       "<"
     )
     .to(
-      ".intro-text",
+      ".intro-text, .human-being",
       {
         color: "#EDEEE5",
       },
@@ -517,6 +530,58 @@ document.querySelectorAll("a").forEach(a => {
       0
     );
 });
+
+
+ScrollTrigger.create({
+  trigger: ".body-sections",
+  start: "top top",
+  end: "bottom top",
+  onEnter: enterSectionColors,
+  onEnterBack: enterSectionColors,
+  onLeave: leaveSectionColors,
+  onLeaveBack: leaveSectionColors,
+});
+
+function enterSectionColors() {
+  gsap.to("header", {
+    backgroundColor: "#383331",
+    opacity: 0.95,
+    duration: 0.3,
+  });
+  gsap.to("nav a", {
+    color: "#EDEEE5",
+    opacity: 1,
+    duration: 0.3,
+  });
+}
+
+function leaveSectionColors() {
+  gsap.to("header", {
+    backgroundColor: "rgba(0,0,0,0)",
+    opacity: 1,
+    duration: 0.3,
+  });
+  gsap.to("nav a", {
+    color: "#383331",
+    opacity: 0.7,
+    duration: 0.3,
+  });
+}
+
+// scroll-to
+const navLinks = document.querySelectorAll(
+  'nav.desktop-only a[href^="#"], a.btn-sidebar[href^="#"]'
+);
+
+navLinks.forEach(link => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault(); // stop default jump
+    const target = link.getAttribute("href"); 
+    smoother.scrollTo(target, true, "top 90px");
+  });
+});
+
+
 
 // gsap.globalTimeline.timeScale(3);
 gsap.globalTimeline.timeScale(1.5);
