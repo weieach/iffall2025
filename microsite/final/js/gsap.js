@@ -723,6 +723,16 @@ document.getElementById("logo-link").addEventListener("click", (e) => {
 // });
 
 
+gsap.set(".dropped-food", {
+  top: () => `${gsap.utils.random(-5, 50)}%`,
+  left: () => `${gsap.utils.random(0, 90)}%`,
+  rotation: () => gsap.utils.random(-40, 20),
+  scale: () => gsap.utils.random(0.5, 2),
+});
+
+smoother.effects(".dropped-food", {
+	speed: "auto"
+});
 
 
 gsap.globalTimeline.timeScale(3);
