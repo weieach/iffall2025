@@ -726,7 +726,8 @@ ScrollTrigger.create({
   trigger: ".fact-2",
   start: "top bottom",
   once: true,
-  onEnter: () =>   planeTl.pause(),
+  onEnter: () => 
+    planeTl.play(),
 });
 
 gsap.set(".dropped-food", {
