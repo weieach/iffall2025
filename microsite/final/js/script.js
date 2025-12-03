@@ -30,6 +30,14 @@ function time() {
 }
 
 
+document.getElementById("logo-link").addEventListener("click", (e) => {
+  e.preventDefault();
 
+  smoother.scrollTo(0, true); // smooth scroll to top
 
+  // wait for scrolling to finish, then reload
+  setTimeout(() => {
+    window.location.reload();
+  }, 600); // duration in ms, adjust if your smooth time is longer
+});
 

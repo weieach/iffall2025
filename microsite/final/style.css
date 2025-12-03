@@ -177,8 +177,9 @@ footer .name{
     text-wrap: nowrap;
     overflow: hidden;
     margin-left: 36%;
-    color: var(--dark-btn);
-    border: 1.5px dashed rgba(55, 51, 49, 0.4);
+    color: #413F3D;
+    border: 1.5px dashed #413F3D;
+    
     padding: 4px 15px ;
     border-radius: 100px;
 }

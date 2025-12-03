@@ -236,9 +236,6 @@ document.querySelectorAll("a").forEach(a => {
   btnNight.setAttribute("disabled", "disabled");
   btnNightText.textContent = "Say hi to our squirrel!";
   turnsNightTl
-    .to(".tooltip", {
-      opacity: 0,
-    })
     .to(".ph-arrow-fat-left", {
       opacity: 0,
     })
@@ -369,6 +366,9 @@ document.querySelectorAll("a").forEach(a => {
       duration: 1.2,
       morphSVG: "#moon-icon-night path",
       fill: "#92ACD7",
+    })
+    .to(".tooltip", {
+      opacity: 0,
     })
 
     //reveal portrait
@@ -629,5 +629,23 @@ navLinksMobile.forEach(link => {
 });
 
 
+//click on logo -> reload
+document.getElementById("logo-link").addEventListener("click", (e) => {
+  e.preventDefault();
+
+  smoother.scrollTo(0, true);
+  const checkScroll = setInterval(() => {
+    if (window.scrollY <= 1) {
+      clearInterval(checkScroll);
+      window.location.reload();
+    }
+  }, 50);
+});
+
+
+
+
 // gsap.globalTimeline.timeScale(3);
 gsap.globalTimeline.timeScale(1.5);
+
+
