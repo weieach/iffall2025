@@ -510,7 +510,7 @@ footer .name{
 
 .intro-text{
     font-size: 2rem;
-    font-weight: 450;
+    /* font-weight: 450; */
     font-family: "Stack Sans Headline";
     color: var(--dark-btn);
     width: 80%;

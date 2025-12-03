@@ -722,6 +722,12 @@ document.getElementById("logo-link").addEventListener("click", (e) => {
 //   onEnter: () => initFoodParallax(14),
 // });
 
+ScrollTrigger.create({
+  trigger: ".fact-2",
+  start: "top bottom",
+  once: true,
+  onEnter: () =>   planeTl.pause(),
+});
 
 gsap.set(".dropped-food", {
   top: () => `${gsap.utils.random(-5, 50)}%`,
