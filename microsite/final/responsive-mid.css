@@ -178,6 +178,21 @@
     top: 52%;
   }
 
+  .intro-text {
+    
+    font-size: 2.2rem;
+  }
+
+  .intro-text span {
+    
+    font-size: 2.5rem;
+  }
+
+  .quote-text{
+    font-size: 4.5rem;
+    height: 4.3rem;
+  }
+
   .z-small {
     width: 0.9rem;
     left: 40%;

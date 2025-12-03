@@ -439,6 +439,7 @@ footer .name{
     padding-bottom: 3%;
     /* gap: 2.78%; */
     gap: 4%;
+    overflow: hidden;
     /* justify-content: space-between; */
     height: 100%;
     
@@ -509,6 +510,7 @@ footer .name{
 
 .intro-text{
     font-size: 2rem;
+    font-weight: 450;
     font-family: "Stack Sans Headline";
     color: var(--dark-btn);
     width: 80%;

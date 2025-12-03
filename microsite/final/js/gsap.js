@@ -735,7 +735,7 @@ smoother.effects(".dropped-food", {
 });
 
 
-gsap.globalTimeline.timeScale(3);
-// gsap.globalTimeline.timeScale(1.5);
+// gsap.globalTimeline.timeScale(3);
+gsap.globalTimeline.timeScale(1.5);
 
 
