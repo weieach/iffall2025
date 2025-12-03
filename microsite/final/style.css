@@ -34,13 +34,13 @@ header > div{
 
 
 body{
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 nav ul{
     display: flex;
     list-style-type: none;
-    gap: 40px;
+    gap: 2.2rem;
     
 }
 
@@ -174,8 +174,11 @@ footer .name{
     display: flex;
     align-items: center;
     gap: 8px;
+    text-wrap: nowrap;
+    overflow: hidden;
+    margin-left: 36%;
     color: var(--dark-btn);
-    border: 1.5px dashed var(--dark-btn);
+    border: 1.5px dashed rgba(55, 51, 49, 0.4);
     padding: 4px 15px ;
     border-radius: 100px;
 }

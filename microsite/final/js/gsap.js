@@ -11,7 +11,7 @@ gsap.registerPlugin(
 );
 
 //disable nav anchors upon entry
-document.querySelectorAll("nav a").forEach(a => {
+document.querySelectorAll("nav.desktop-only a").forEach(a => {
   a.style.pointerEvents = "none";
   a.style.opacity = 0.5;
 });
@@ -100,6 +100,16 @@ gsap.to(".ph-arrow-fat-left", {
   ease: "power2.out",
 });
 
+gsap.from(".tooltip", {
+  delay: 5,
+  opacity: 0,  
+  width: 0,
+  duration: 1,
+});
+
+
+//food timeline
+
 let foodTl = gsap.timeline({
   repeat: -1,
   repeatDelay: 1.5,
@@ -158,6 +168,7 @@ let smoother = ScrollSmoother.create({
 // button night: svg morph
 
 let btnNight = document.querySelector("#btn-night");
+let btnNightMobile = document.querySelector("#btn-night-mobile");
 let btnNightText = document.querySelector("#btn-night p");
 let doorImg = document.querySelector(".img-door");
 
@@ -175,6 +186,30 @@ btnNight.addEventListener("mouseenter", () => {
 });
 
 btnNight.addEventListener("mouseleave", () => {
+  gsap.to("#moon-icon", {
+    duration: 1,
+    morphSVG: "#moon-icon",
+  });
+  gsap.to(btnNight, {
+    backgroundColor: "#373331",
+    duration: 0.2,
+  });
+});
+
+btnNightMobile.addEventListener("mouseenter", () => {
+  if (!btnNight.hasAttribute("disabled")) {
+    gsap.to("#moon-icon", {
+      duration: 1,
+      morphSVG: "#moon-icon-detailed",
+    });
+    gsap.to(btnNight, {
+      backgroundColor: "#0a0a20",
+      duration: 0.2,
+    });
+  }
+});
+
+btnNightMobile.addEventListener("mouseleave", () => {
   gsap.to("#moon-icon", {
     duration: 1,
     morphSVG: "#moon-icon",
@@ -563,14 +598,14 @@ function leaveSectionColors() {
   });
   gsap.to("nav a", {
     color: "#383331",
-    opacity: 0.7,
+    opacity: 1,
     duration: 0.3,
   });
 }
 
 // scroll-to
 const navLinks = document.querySelectorAll(
-  'nav.desktop-only a[href^="#"], a.btn-sidebar[href^="#"]'
+  'nav.desktop-only a[href^="#"], a#btn-night-mobile[href^="#"]'
 );
 
 navLinks.forEach(link => {
@@ -581,6 +616,17 @@ navLinks.forEach(link => {
   });
 });
 
+const navLinksMobile = document.querySelectorAll(
+  'nav.mobile-only a[href^="#"]'
+);
+
+navLinksMobile.forEach(link => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault(); // stop default jump
+    const target = link.getAttribute("href"); 
+    smoother.scrollTo(target, true, "top 110px");
+  });
+});
 
 
 // gsap.globalTimeline.timeScale(3);
